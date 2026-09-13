@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>598</width>
+    <height>683</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="Ln_Col">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>640</y>
+      <width>49</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ln: , Col:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Chars">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>640</y>
+      <width>111</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Characters:</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>591</width>
+      <height>641</height>
+     </rect>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Enter Text:...&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>598</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <widget class="QMenu" name="menuNew">
+     <property name="title">
+      <string>New</string>
+     </property>
+     <addaction name="actionBlank"/>
+     <addaction name="actionCustom"/>
+     <addaction name="action_txt_2"/>
+     <addaction name="action_cpp_2"/>
+     <addaction name="action_c_2"/>
+     <addaction name="action_html_2"/>
+     <addaction name="action_css_2"/>
+     <addaction name="action_js_2"/>
+    </widget>
+    <widget class="QMenu" name="menuSave_As">
+     <property name="title">
+      <string>Save As</string>
+     </property>
+     <addaction name="action_txt"/>
+     <addaction name="action_cpp"/>
+     <addaction name="action_c"/>
+     <addaction name="action_html"/>
+     <addaction name="action_css"/>
+     <addaction name="action_js"/>
+     <addaction name="actioncustom"/>
+    </widget>
+    <widget class="QMenu" name="menuSave">
+     <property name="title">
+      <string>Save</string>
+     </property>
+     <addaction name="actionOveride"/>
+     <addaction name="actionNew_File"/>
+     <addaction name="actionDuplicate"/>
+    </widget>
+    <widget class="QMenu" name="menuNew_Window">
+     <property name="title">
+      <string>New Window</string>
+     </property>
+     <addaction name="actionBlank_2"/>
+     <addaction name="actionCustom_2"/>
+     <addaction name="action_txt_3"/>
+     <addaction name="action_cpp_3"/>
+     <addaction name="action_c_3"/>
+     <addaction name="action_html_3"/>
+     <addaction name="action_css_3"/>
+     <addaction name="action_js_3"/>
+    </widget>
+    <addaction name="menuNew"/>
+    <addaction name="separator"/>
+    <addaction name="menuNew_Window"/>
+    <addaction name="separator"/>
+    <addaction name="actionOpen"/>
+    <addaction name="separator"/>
+    <addaction name="menuSave"/>
+    <addaction name="separator"/>
+    <addaction name="menuSave_As"/>
+    <addaction name="separator"/>
+    <addaction name="actionClose_File"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit_App"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <widget class="QMenu" name="menuSettings">
+     <property name="title">
+      <string>Settings</string>
+     </property>
+     <addaction name="actionAll"/>
+     <addaction name="actionTheme"/>
+    </widget>
+    <widget class="QMenu" name="menuConfig">
+     <property name="title">
+      <string>Config</string>
+     </property>
+     <addaction name="actionSave_Config_As"/>
+     <addaction name="actionDelete_Config"/>
+     <addaction name="actionReset_To_Default"/>
+    </widget>
+    <addaction name="menuSettings"/>
+    <addaction name="separator"/>
+    <addaction name="menuConfig"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <widget class="QMenu" name="menuGithub">
+     <property name="title">
+      <string>Github</string>
+     </property>
+     <addaction name="actionRepository"/>
+     <addaction name="actionIssues"/>
+     <addaction name="actionProfile"/>
+    </widget>
+    <addaction name="menuGithub"/>
+    <addaction name="separator"/>
+    <addaction name="actionDocumentation"/>
+    <addaction name="separator"/>
+    <addaction name="actionAbout"/>
+    <addaction name="separator"/>
+    <addaction name="actionRestart"/>
+    <addaction name="separator"/>
+    <addaction name="actionCheck_Updates"/>
+    <addaction name="separator"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionClose_File">
+   <property name="text">
+    <string>Close File</string>
+   </property>
+  </action>
+  <action name="actionDocumentation">
+   <property name="text">
+    <string>Documentation</string>
+   </property>
+  </action>
+  <action name="action_txt">
+   <property name="text">
+    <string>.txt</string>
+   </property>
+  </action>
+  <action name="action_cpp">
+   <property name="text">
+    <string>.cpp</string>
+   </property>
+  </action>
+  <action name="action_c">
+   <property name="text">
+    <string>.c</string>
+   </property>
+  </action>
+  <action name="action_html">
+   <property name="text">
+    <string>.html</string>
+   </property>
+  </action>
+  <action name="action_css">
+   <property name="text">
+    <string>.css</string>
+   </property>
+  </action>
+  <action name="action_js">
+   <property name="text">
+    <string>.js</string>
+   </property>
+  </action>
+  <action name="actioncustom">
+   <property name="text">
+    <string>custom</string>
+   </property>
+  </action>
+  <action name="actionBlank">
+   <property name="text">
+    <string>Blank</string>
+   </property>
+  </action>
+  <action name="actionCustom">
+   <property name="text">
+    <string>Custom</string>
+   </property>
+  </action>
+  <action name="action_txt_2">
+   <property name="text">
+    <string>.txt</string>
+   </property>
+  </action>
+  <action name="action_cpp_2">
+   <property name="text">
+    <string>.cpp</string>
+   </property>
+  </action>
+  <action name="action_c_2">
+   <property name="text">
+    <string>.c</string>
+   </property>
+  </action>
+  <action name="action_html_2">
+   <property name="text">
+    <string>.html</string>
+   </property>
+  </action>
+  <action name="action_css_2">
+   <property name="text">
+    <string>.css</string>
+   </property>
+  </action>
+  <action name="action_js_2">
+   <property name="text">
+    <string>.js</string>
+   </property>
+  </action>
+  <action name="actionOveride">
+   <property name="text">
+    <string>Overide</string>
+   </property>
+  </action>
+  <action name="actionNew_File">
+   <property name="text">
+    <string>New File</string>
+   </property>
+  </action>
+  <action name="actionDuplicate">
+   <property name="text">
+    <string>Duplicate</string>
+   </property>
+  </action>
+  <action name="actionExit_App">
+   <property name="text">
+    <string>Exit App</string>
+   </property>
+  </action>
+  <action name="actionAll">
+   <property name="text">
+    <string>All</string>
+   </property>
+  </action>
+  <action name="actionTheme">
+   <property name="text">
+    <string>Theme</string>
+   </property>
+  </action>
+  <action name="actionRepository">
+   <property name="text">
+    <string>Repository</string>
+   </property>
+  </action>
+  <action name="actionIssues">
+   <property name="text">
+    <string>Issues</string>
+   </property>
+  </action>
+  <action name="actionProfile">
+   <property name="text">
+    <string>Profile</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="actionRestart">
+   <property name="text">
+    <string>Restart</string>
+   </property>
+  </action>
+  <action name="actionCheck_Updates">
+   <property name="text">
+    <string>Check Updates</string>
+   </property>
+  </action>
+  <action name="actionSave_Config_As">
+   <property name="text">
+    <string>Save Config As...</string>
+   </property>
+  </action>
+  <action name="actionDelete_Config">
+   <property name="text">
+    <string>Delete Config</string>
+   </property>
+  </action>
+  <action name="actionReset_To_Default">
+   <property name="text">
+    <string>Reset To Default</string>
+   </property>
+  </action>
+  <action name="actionBlank_2">
+   <property name="text">
+    <string>Blank</string>
+   </property>
+  </action>
+  <action name="actionCustom_2">
+   <property name="text">
+    <string>Custom</string>
+   </property>
+  </action>
+  <action name="action_txt_3">
+   <property name="text">
+    <string>.txt</string>
+   </property>
+  </action>
+  <action name="action_cpp_3">
+   <property name="text">
+    <string>.cpp</string>
+   </property>
+  </action>
+  <action name="action_c_3">
+   <property name="text">
+    <string>.c</string>
+   </property>
+  </action>
+  <action name="action_html_3">
+   <property name="text">
+    <string>.html</string>
+   </property>
+  </action>
+  <action name="action_css_3">
+   <property name="text">
+    <string>.css</string>
+   </property>
+  </action>
+  <action name="action_js_3">
+   <property name="text">
+    <string>.js</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
