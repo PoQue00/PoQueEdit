@@ -42,7 +42,16 @@ template <> constexpr inline auto MainWindow::qt_create_metaobjectdata<qt_meta_t
         "on_actionExit_App_triggered",
         "",
         "on_actionBlank_triggered",
-        "on_action_cpp_triggered"
+        "on_action_cpp_triggered",
+        "on_action_txt_triggered",
+        "on_action_c_triggered",
+        "on_action_html_triggered",
+        "on_action_css_triggered",
+        "on_action_js_triggered",
+        "on_actioncustom_triggered",
+        "on_actionOveride_triggered",
+        "on_actionNew_File_triggered",
+        "on_actionDuplicate_triggered"
     };
 
     QtMocHelpers::UintData qt_methods {
@@ -52,6 +61,24 @@ template <> constexpr inline auto MainWindow::qt_create_metaobjectdata<qt_meta_t
         QtMocHelpers::SlotData<void()>(3, 2, QMC::AccessPrivate, QMetaType::Void),
         // Slot 'on_action_cpp_triggered'
         QtMocHelpers::SlotData<void()>(4, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_action_txt_triggered'
+        QtMocHelpers::SlotData<void()>(5, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_action_c_triggered'
+        QtMocHelpers::SlotData<void()>(6, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_action_html_triggered'
+        QtMocHelpers::SlotData<void()>(7, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_action_css_triggered'
+        QtMocHelpers::SlotData<void()>(8, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_action_js_triggered'
+        QtMocHelpers::SlotData<void()>(9, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_actioncustom_triggered'
+        QtMocHelpers::SlotData<void()>(10, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_actionOveride_triggered'
+        QtMocHelpers::SlotData<void()>(11, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_actionNew_File_triggered'
+        QtMocHelpers::SlotData<void()>(12, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_actionDuplicate_triggered'
+        QtMocHelpers::SlotData<void()>(13, 2, QMC::AccessPrivate, QMetaType::Void),
     };
     QtMocHelpers::UintData qt_properties {
     };
@@ -78,6 +105,15 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 0: _t->on_actionExit_App_triggered(); break;
         case 1: _t->on_actionBlank_triggered(); break;
         case 2: _t->on_action_cpp_triggered(); break;
+        case 3: _t->on_action_txt_triggered(); break;
+        case 4: _t->on_action_c_triggered(); break;
+        case 5: _t->on_action_html_triggered(); break;
+        case 6: _t->on_action_css_triggered(); break;
+        case 7: _t->on_action_js_triggered(); break;
+        case 8: _t->on_actioncustom_triggered(); break;
+        case 9: _t->on_actionOveride_triggered(); break;
+        case 10: _t->on_actionNew_File_triggered(); break;
+        case 11: _t->on_actionDuplicate_triggered(); break;
         default: ;
         }
     }
@@ -103,14 +139,14 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 3)
+        if (_id < 12)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 3;
+        _id -= 12;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 3)
+        if (_id < 12)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 3;
+        _id -= 12;
     }
     return _id;
 }

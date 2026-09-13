@@ -4,6 +4,7 @@
 #include <QInputDialog>
 #include <QFile>
 #include <QDir>
+#include <QFileInfo>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -16,6 +17,9 @@ MainWindow::~MainWindow()
 {
     delete ui;
 }
+
+QString currentFileName;
+QString currentFileExtension;
 
 
 void MainWindow::on_actionExit_App_triggered()
@@ -33,8 +37,13 @@ void MainWindow::on_actionBlank_triggered()
 void MainWindow::on_action_cpp_triggered()
 {
     bool ok;
-    const QString fileName = QInputDialog::getText(
+
+    currentFileExtension = ".cpp";
+
+    currentFileName = QInputDialog::getText(
         this, tr("Name File"), tr("File name:"), QLineEdit::Normal, QString(), &ok);
+
+    const QString fileName = currentFileName;
 
     if (!ok || fileName.trimmed().isEmpty())
         return;
@@ -43,7 +52,7 @@ void MainWindow::on_action_cpp_triggered()
     if (!QDir().mkpath(folderPath))
         return;
 
-    QFile file(folderPath + "/" + fileName + ".cpp");
+    QFile file(folderPath + "/" + fileName + currentFileExtension);
     if (file.open(QIODevice::WriteOnly | QIODevice::Text))
         file.write(ui->textEdit->toPlainText().toUtf8());
 }
@@ -52,8 +61,13 @@ void MainWindow::on_action_cpp_triggered()
 void MainWindow::on_action_txt_triggered()
 {
     bool ok;
-    const QString fileName = QInputDialog::getText(
+
+    currentFileExtension = ".txt";
+
+    currentFileName = QInputDialog::getText(
         this, tr("Name File"), tr("File name:"), QLineEdit::Normal, QString(), &ok);
+
+    const QString fileName = currentFileName;
 
     if (!ok || fileName.trimmed().isEmpty())
         return;
@@ -62,7 +76,7 @@ void MainWindow::on_action_txt_triggered()
     if (!QDir().mkpath(folderPath))
         return;
 
-    QFile file(folderPath + "/" + fileName + ".txt");
+    QFile file(folderPath + "/" + fileName + currentFileExtension);
     if (file.open(QIODevice::WriteOnly | QIODevice::Text))
         file.write(ui->textEdit->toPlainText().toUtf8());
 }
@@ -71,8 +85,13 @@ void MainWindow::on_action_txt_triggered()
 void MainWindow::on_action_c_triggered()
 {
     bool ok;
-    const QString fileName = QInputDialog::getText(
+
+    currentFileExtension = ".c";
+
+    currentFileName = QInputDialog::getText(
         this, tr("Name File"), tr("File name:"), QLineEdit::Normal, QString(), &ok);
+
+    const QString fileName = currentFileName;
 
     if (!ok || fileName.trimmed().isEmpty())
         return;
@@ -81,7 +100,7 @@ void MainWindow::on_action_c_triggered()
     if (!QDir().mkpath(folderPath))
         return;
 
-    QFile file(folderPath + "/" + fileName + ".c");
+    QFile file(folderPath + "/" + fileName + currentFileExtension);
     if (file.open(QIODevice::WriteOnly | QIODevice::Text))
         file.write(ui->textEdit->toPlainText().toUtf8());
 }
@@ -90,8 +109,13 @@ void MainWindow::on_action_c_triggered()
 void MainWindow::on_action_html_triggered()
 {
     bool ok;
-    const QString fileName = QInputDialog::getText(
+
+    currentFileExtension = ".html";
+
+    currentFileName = QInputDialog::getText(
         this, tr("Name File"), tr("File name:"), QLineEdit::Normal, QString(), &ok);
+
+    const QString fileName = currentFileName;
 
     if (!ok || fileName.trimmed().isEmpty())
         return;
@@ -100,7 +124,7 @@ void MainWindow::on_action_html_triggered()
     if (!QDir().mkpath(folderPath))
         return;
 
-    QFile file(folderPath + "/" + fileName + ".html");
+    QFile file(folderPath + "/" + fileName + currentFileExtension);
     if (file.open(QIODevice::WriteOnly | QIODevice::Text))
         file.write(ui->textEdit->toPlainText().toUtf8());
 }
@@ -109,8 +133,13 @@ void MainWindow::on_action_html_triggered()
 void MainWindow::on_action_css_triggered()
 {
     bool ok;
-    const QString fileName = QInputDialog::getText(
+
+    currentFileExtension = ".css";
+
+    currentFileName = QInputDialog::getText(
         this, tr("Name File"), tr("File name:"), QLineEdit::Normal, QString(), &ok);
+
+    const QString fileName = currentFileName;
 
     if (!ok || fileName.trimmed().isEmpty())
         return;
@@ -119,7 +148,7 @@ void MainWindow::on_action_css_triggered()
     if (!QDir().mkpath(folderPath))
         return;
 
-    QFile file(folderPath + "/" + fileName + ".css");
+    QFile file(folderPath + "/" + fileName + currentFileExtension);
     if (file.open(QIODevice::WriteOnly | QIODevice::Text))
         file.write(ui->textEdit->toPlainText().toUtf8());
 }
@@ -128,8 +157,13 @@ void MainWindow::on_action_css_triggered()
 void MainWindow::on_action_js_triggered()
 {
     bool ok;
-    const QString fileName = QInputDialog::getText(
+
+    currentFileExtension = ".js";
+
+    currentFileName = QInputDialog::getText(
         this, tr("Name File"), tr("File name:"), QLineEdit::Normal, QString(), &ok);
+
+    const QString fileName = currentFileName;
 
     if (!ok || fileName.trimmed().isEmpty())
         return;
@@ -138,7 +172,7 @@ void MainWindow::on_action_js_triggered()
     if (!QDir().mkpath(folderPath))
         return;
 
-    QFile file(folderPath + "/" + fileName + ".js");
+    QFile file(folderPath + "/" + fileName + currentFileExtension);
     if (file.open(QIODevice::WriteOnly | QIODevice::Text))
         file.write(ui->textEdit->toPlainText().toUtf8());
 }
@@ -147,8 +181,14 @@ void MainWindow::on_action_js_triggered()
 void MainWindow::on_actioncustom_triggered()
 {
     bool ok;
-    const QString fileName = QInputDialog::getText(
+
+    currentFileExtension = QInputDialog::getText(
+        this, tr("Custom Extension"), tr("Enter custom extension (with dot):"), QLineEdit::Normal, QString(), &ok);
+
+    currentFileName = QInputDialog::getText(
         this, tr("Name File"), tr("File name:"), QLineEdit::Normal, QString(), &ok);
+
+    const QString fileName = currentFileName;
 
     if (!ok || fileName.trimmed().isEmpty())
         return;
@@ -157,7 +197,53 @@ void MainWindow::on_actioncustom_triggered()
     if (!QDir().mkpath(folderPath))
         return;
 
-    QFile file(folderPath + "/" + fileName);
+    QFile file(folderPath + "/" + fileName + currentFileExtension);
+    if (file.open(QIODevice::WriteOnly | QIODevice::Text))
+        file.write(ui->textEdit->toPlainText().toUtf8());
+}
+
+
+void MainWindow::on_actionOveride_triggered()
+{
+    const QString folderPath = QDir::homePath() + "/Documents/PoQueEdit";
+    if (!QDir().mkpath(folderPath))
+        return;
+
+    QFile file(folderPath + "/" + currentFileName + currentFileExtension);
+    if (file.open(QIODevice::WriteOnly | QIODevice::Text))
+        file.write(ui->textEdit->toPlainText().toUtf8());
+}
+
+
+void MainWindow::on_actionNew_File_triggered()
+{
+    ui->textEdit->clear();
+}
+
+
+void MainWindow::on_actionDuplicate_triggered()
+{
+    if (currentFileName.trimmed().isEmpty())
+        return;
+
+    const QString folderPath = QDir::homePath() + "/Documents/PoQueEdit";
+    if (!QDir().mkpath(folderPath))
+        return;
+
+    const QFileInfo fileInfo(currentFileName);
+    const QString baseName = fileInfo.completeBaseName();
+    const QString extension = fileInfo.completeSuffix().isEmpty()
+        ? QString()
+        : "." + fileInfo.completeSuffix();
+
+    int duplicateNumber = 1;
+    QString duplicatePath;
+    do {
+        duplicatePath = folderPath + "/" + baseName + " ("
+            + QString::number(duplicateNumber++) + ")" + extension;
+    } while (QFile::exists(duplicatePath));
+
+    QFile file(duplicatePath);
     if (file.open(QIODevice::WriteOnly | QIODevice::Text))
         file.write(ui->textEdit->toPlainText().toUtf8());
 }
