@@ -6,6 +6,8 @@
 #include <QFileInfo>
 #include <QDesktopServices>
 #include <QUrl>
+#include <QApplication>
+#include <QProcess>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -265,5 +267,12 @@ void MainWindow::on_actionIssues_triggered()
 void MainWindow::on_actionProfile_triggered()
 {
     QDesktopServices::openUrl(QUrl("https://github.com/PoQue00"));
+}
+
+
+void MainWindow::on_actionRestart_triggered()
+{
+    qApp->quit();
+    QProcess::startDetached(qApp->arguments()[0], qApp->arguments());
 }
 

@@ -54,7 +54,8 @@ template <> constexpr inline auto MainWindow::qt_create_metaobjectdata<qt_meta_t
         "on_actionDuplicate_triggered",
         "on_actionRepository_triggered",
         "on_actionIssues_triggered",
-        "on_actionProfile_triggered"
+        "on_actionProfile_triggered",
+        "on_actionRestart_triggered"
     };
 
     QtMocHelpers::UintData qt_methods {
@@ -88,6 +89,8 @@ template <> constexpr inline auto MainWindow::qt_create_metaobjectdata<qt_meta_t
         QtMocHelpers::SlotData<void()>(15, 2, QMC::AccessPrivate, QMetaType::Void),
         // Slot 'on_actionProfile_triggered'
         QtMocHelpers::SlotData<void()>(16, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_actionRestart_triggered'
+        QtMocHelpers::SlotData<void()>(17, 2, QMC::AccessPrivate, QMetaType::Void),
     };
     QtMocHelpers::UintData qt_properties {
     };
@@ -126,6 +129,7 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 12: _t->on_actionRepository_triggered(); break;
         case 13: _t->on_actionIssues_triggered(); break;
         case 14: _t->on_actionProfile_triggered(); break;
+        case 15: _t->on_actionRestart_triggered(); break;
         default: ;
         }
     }
@@ -151,14 +155,14 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 15)
+        if (_id < 16)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 15;
+        _id -= 16;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 15)
+        if (_id < 16)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 15;
+        _id -= 16;
     }
     return _id;
 }
