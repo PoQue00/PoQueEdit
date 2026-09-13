@@ -1,0 +1,21 @@
+# ninja log v7
+50	328	8110012341486396	Text_Editor_autogen/timestamp	53d21aec6082a0f9
+50	328	8110012341486396	Text_Editor_autogen/mocs_compilation.cpp	53d21aec6082a0f9
+50	328	8110012341486396	C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/Text_Editor/build/Desktop_x86_windows_msys_pe_64bit_Debug/Text_Editor_autogen/timestamp	53d21aec6082a0f9
+50	328	8110012341486396	C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/Text_Editor/build/Desktop_x86_windows_msys_pe_64bit_Debug/Text_Editor_autogen/mocs_compilation.cpp	53d21aec6082a0f9
+1505	7347	8110007159255142	CMakeFiles/Text_Editor.dir/Text_Editor_autogen/mocs_compilation.cpp.obj	1f1bfdb442f3eef0
+1510	7336	8110007159314413	CMakeFiles/Text_Editor.dir/main.cpp.obj	825e7ab31a8494b1
+330	6708	8110012344279131	CMakeFiles/Text_Editor.dir/mainwindow.cpp.obj	4a73efec4e359bec
+6708	8291	8110012408062825	Text_Editor.exe	d8d9c67c71c2820b
+43	385	8110015231160477	Text_Editor_autogen/timestamp	53d21aec6082a0f9
+43	385	8110015231160477	Text_Editor_autogen/mocs_compilation.cpp	53d21aec6082a0f9
+43	385	8110015231160477	C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/Text_Editor/build/Desktop_x86_windows_msys_pe_64bit_Debug/Text_Editor_autogen/timestamp	53d21aec6082a0f9
+43	385	8110015231160477	C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/Text_Editor/build/Desktop_x86_windows_msys_pe_64bit_Debug/Text_Editor_autogen/mocs_compilation.cpp	53d21aec6082a0f9
+386	6653	8110015234584505	CMakeFiles/Text_Editor.dir/mainwindow.cpp.obj	4a73efec4e359bec
+6653	7742	8110015297254262	Text_Editor.exe	d8d9c67c71c2820b
+47	344	8110016542852700	Text_Editor_autogen/timestamp	53d21aec6082a0f9
+47	344	8110016542852700	Text_Editor_autogen/mocs_compilation.cpp	53d21aec6082a0f9
+47	344	8110016542852700	C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/Text_Editor/build/Desktop_x86_windows_msys_pe_64bit_Debug/Text_Editor_autogen/timestamp	53d21aec6082a0f9
+47	344	8110016542852700	C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/Text_Editor/build/Desktop_x86_windows_msys_pe_64bit_Debug/Text_Editor_autogen/mocs_compilation.cpp	53d21aec6082a0f9
+345	8404	8110016545834096	CMakeFiles/Text_Editor.dir/mainwindow.cpp.obj	4a73efec4e359bec
+8404	8929	8110016626428030	Text_Editor.exe	d8d9c67c71c2820b
