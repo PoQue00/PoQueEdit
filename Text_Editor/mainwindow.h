@@ -42,6 +42,46 @@ private slots:
 
     void on_actionDuplicate_triggered();
 
+    void on_actionRepository_triggered();
+
+    void on_actionIssues_triggered();
+
+    void on_actionProfile_triggered();
+
+    void on_actionRestart_triggered();
+
+    void on_actionCustom_triggered();
+
+    void on_action_txt_2_triggered();
+
+    void on_action_cpp_2_triggered();
+
+    void on_action_c_2_triggered();
+
+    void on_action_html_2_triggered();
+
+    void on_action_css_2_triggered();
+
+    void on_action_js_2_triggered();
+
+    void on_actionBlank_2_triggered();
+
+    void on_actionCustom_2_triggered();
+
+    void on_action_txt_3_triggered();
+
+    void on_action_cpp_3_triggered();
+
+    void on_action_c_3_triggered();
+
+    void on_action_html_3_triggered();
+
+    void on_action_css_3_triggered();
+
+    void on_action_js_3_triggered();
+
+    void on_actioncurrent_triggered();
+
 private:
     Ui::MainWindow *ui;
 };

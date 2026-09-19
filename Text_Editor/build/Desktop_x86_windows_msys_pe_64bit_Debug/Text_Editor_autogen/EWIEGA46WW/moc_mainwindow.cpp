@@ -51,7 +51,27 @@ template <> constexpr inline auto MainWindow::qt_create_metaobjectdata<qt_meta_t
         "on_actioncustom_triggered",
         "on_actionOveride_triggered",
         "on_actionNew_File_triggered",
-        "on_actionDuplicate_triggered"
+        "on_actionDuplicate_triggered",
+        "on_actionRepository_triggered",
+        "on_actionIssues_triggered",
+        "on_actionProfile_triggered",
+        "on_actionRestart_triggered",
+        "on_actionCustom_triggered",
+        "on_action_txt_2_triggered",
+        "on_action_cpp_2_triggered",
+        "on_action_c_2_triggered",
+        "on_action_html_2_triggered",
+        "on_action_css_2_triggered",
+        "on_action_js_2_triggered",
+        "on_actionBlank_2_triggered",
+        "on_actionCustom_2_triggered",
+        "on_action_txt_3_triggered",
+        "on_action_cpp_3_triggered",
+        "on_action_c_3_triggered",
+        "on_action_html_3_triggered",
+        "on_action_css_3_triggered",
+        "on_action_js_3_triggered",
+        "on_actioncurrent_triggered"
     };
 
     QtMocHelpers::UintData qt_methods {
@@ -79,6 +99,46 @@ template <> constexpr inline auto MainWindow::qt_create_metaobjectdata<qt_meta_t
         QtMocHelpers::SlotData<void()>(12, 2, QMC::AccessPrivate, QMetaType::Void),
         // Slot 'on_actionDuplicate_triggered'
         QtMocHelpers::SlotData<void()>(13, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_actionRepository_triggered'
+        QtMocHelpers::SlotData<void()>(14, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_actionIssues_triggered'
+        QtMocHelpers::SlotData<void()>(15, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_actionProfile_triggered'
+        QtMocHelpers::SlotData<void()>(16, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_actionRestart_triggered'
+        QtMocHelpers::SlotData<void()>(17, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_actionCustom_triggered'
+        QtMocHelpers::SlotData<void()>(18, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_action_txt_2_triggered'
+        QtMocHelpers::SlotData<void()>(19, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_action_cpp_2_triggered'
+        QtMocHelpers::SlotData<void()>(20, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_action_c_2_triggered'
+        QtMocHelpers::SlotData<void()>(21, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_action_html_2_triggered'
+        QtMocHelpers::SlotData<void()>(22, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_action_css_2_triggered'
+        QtMocHelpers::SlotData<void()>(23, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_action_js_2_triggered'
+        QtMocHelpers::SlotData<void()>(24, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_actionBlank_2_triggered'
+        QtMocHelpers::SlotData<void()>(25, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_actionCustom_2_triggered'
+        QtMocHelpers::SlotData<void()>(26, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_action_txt_3_triggered'
+        QtMocHelpers::SlotData<void()>(27, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_action_cpp_3_triggered'
+        QtMocHelpers::SlotData<void()>(28, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_action_c_3_triggered'
+        QtMocHelpers::SlotData<void()>(29, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_action_html_3_triggered'
+        QtMocHelpers::SlotData<void()>(30, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_action_css_3_triggered'
+        QtMocHelpers::SlotData<void()>(31, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_action_js_3_triggered'
+        QtMocHelpers::SlotData<void()>(32, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_actioncurrent_triggered'
+        QtMocHelpers::SlotData<void()>(33, 2, QMC::AccessPrivate, QMetaType::Void),
     };
     QtMocHelpers::UintData qt_properties {
     };
@@ -114,6 +174,26 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 9: _t->on_actionOveride_triggered(); break;
         case 10: _t->on_actionNew_File_triggered(); break;
         case 11: _t->on_actionDuplicate_triggered(); break;
+        case 12: _t->on_actionRepository_triggered(); break;
+        case 13: _t->on_actionIssues_triggered(); break;
+        case 14: _t->on_actionProfile_triggered(); break;
+        case 15: _t->on_actionRestart_triggered(); break;
+        case 16: _t->on_actionCustom_triggered(); break;
+        case 17: _t->on_action_txt_2_triggered(); break;
+        case 18: _t->on_action_cpp_2_triggered(); break;
+        case 19: _t->on_action_c_2_triggered(); break;
+        case 20: _t->on_action_html_2_triggered(); break;
+        case 21: _t->on_action_css_2_triggered(); break;
+        case 22: _t->on_action_js_2_triggered(); break;
+        case 23: _t->on_actionBlank_2_triggered(); break;
+        case 24: _t->on_actionCustom_2_triggered(); break;
+        case 25: _t->on_action_txt_3_triggered(); break;
+        case 26: _t->on_action_cpp_3_triggered(); break;
+        case 27: _t->on_action_c_3_triggered(); break;
+        case 28: _t->on_action_html_3_triggered(); break;
+        case 29: _t->on_action_css_3_triggered(); break;
+        case 30: _t->on_action_js_3_triggered(); break;
+        case 31: _t->on_actioncurrent_triggered(); break;
         default: ;
         }
     }
@@ -139,14 +219,14 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 12)
+        if (_id < 32)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 12;
+        _id -= 32;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 12)
+        if (_id < 32)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 12;
+        _id -= 32;
     }
     return _id;
 }

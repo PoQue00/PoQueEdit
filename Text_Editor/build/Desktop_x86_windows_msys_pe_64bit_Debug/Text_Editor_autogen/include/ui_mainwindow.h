@@ -65,6 +65,7 @@ public:
     QAction *action_html_3;
     QAction *action_css_3;
     QAction *action_js_3;
+    QAction *actioncurrent;
     QWidget *centralwidget;
     QLabel *Ln_Col;
     QLabel *Chars;
@@ -168,6 +169,8 @@ public:
         action_css_3->setObjectName("action_css_3");
         action_js_3 = new QAction(MainWindow);
         action_js_3->setObjectName("action_js_3");
+        actioncurrent = new QAction(MainWindow);
+        actioncurrent->setObjectName("actioncurrent");
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
         Ln_Col = new QLabel(centralwidget);
@@ -237,6 +240,7 @@ public:
         menuSave_As->addAction(action_css);
         menuSave_As->addAction(action_js);
         menuSave_As->addAction(actioncustom);
+        menuSave_As->addAction(actioncurrent);
         menuSave->addAction(actionOveride);
         menuSave->addAction(actionNew_File);
         menuSave->addAction(actionDuplicate);
@@ -320,6 +324,7 @@ public:
         action_html_3->setText(QCoreApplication::translate("MainWindow", ".html", nullptr));
         action_css_3->setText(QCoreApplication::translate("MainWindow", ".css", nullptr));
         action_js_3->setText(QCoreApplication::translate("MainWindow", ".js", nullptr));
+        actioncurrent->setText(QCoreApplication::translate("MainWindow", "current", nullptr));
         Ln_Col->setText(QCoreApplication::translate("MainWindow", "Ln: , Col:", nullptr));
         Chars->setText(QCoreApplication::translate("MainWindow", "Characters:", nullptr));
         textEdit->setHtml(QCoreApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
@@ -329,7 +334,7 @@ public:
 "li.unchecked::marker { content: \"\\2610\"; }\n"
 "li.checked::marker { content: \"\\2612\"; }\n"
 "</style></head><body style=\" font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Enter Text:...</p></body></html>", nullptr));
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>", nullptr));
         menuFile->setTitle(QCoreApplication::translate("MainWindow", "File", nullptr));
         menuNew->setTitle(QCoreApplication::translate("MainWindow", "New", nullptr));
         menuSave_As->setTitle(QCoreApplication::translate("MainWindow", "Save As", nullptr));
