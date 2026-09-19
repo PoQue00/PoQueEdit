@@ -88,6 +88,8 @@ private slots:
 
     void on_actionTheme_triggered();
 
+    void on_tabWidget_tabBarDoubleClicked(int index);
+
 private:
     Ui::MainWindow *ui;
 };

@@ -16,6 +16,7 @@
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenu>
 #include <QtWidgets/QMenuBar>
+#include <QtWidgets/QTabWidget>
 #include <QtWidgets/QTextEdit>
 #include <QtWidgets/QWidget>
 
@@ -70,6 +71,8 @@ public:
     QWidget *centralwidget;
     QLabel *Ln_Col;
     QLabel *Chars;
+    QTabWidget *tabWidget;
+    QWidget *tab;
     QTextEdit *textEdit;
     QMenuBar *menubar;
     QMenu *menuFile;
@@ -183,9 +186,15 @@ public:
         Chars = new QLabel(centralwidget);
         Chars->setObjectName("Chars");
         Chars->setGeometry(QRect(440, 640, 111, 20));
-        textEdit = new QTextEdit(centralwidget);
+        tabWidget = new QTabWidget(centralwidget);
+        tabWidget->setObjectName("tabWidget");
+        tabWidget->setGeometry(QRect(40, 0, 561, 641));
+        tab = new QWidget();
+        tab->setObjectName("tab");
+        textEdit = new QTextEdit(tab);
         textEdit->setObjectName("textEdit");
-        textEdit->setGeometry(QRect(10, 0, 591, 641));
+        textEdit->setGeometry(QRect(0, 0, 551, 611));
+        tabWidget->addTab(tab, QString());
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
@@ -285,6 +294,9 @@ public:
 
         retranslateUi(MainWindow);
 
+        tabWidget->setCurrentIndex(0);
+
+
         QMetaObject::connectSlotsByName(MainWindow);
     } // setupUi
 
@@ -344,6 +356,7 @@ public:
 "li.checked::marker { content: \"\\2612\"; }\n"
 "</style></head><body style=\" font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab), QCoreApplication::translate("MainWindow", "Tab 1", nullptr));
         menuFile->setTitle(QCoreApplication::translate("MainWindow", "File", nullptr));
         menuNew->setTitle(QCoreApplication::translate("MainWindow", "New", nullptr));
         menuSave_As->setTitle(QCoreApplication::translate("MainWindow", "Save As", nullptr));

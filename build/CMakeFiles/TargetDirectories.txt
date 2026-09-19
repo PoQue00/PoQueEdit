@@ -1,0 +1,9 @@
+C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/build/CMakeFiles/Text_Editor.dir
+C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/build/CMakeFiles/edit_cache.dir
+C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/build/CMakeFiles/rebuild_cache.dir
+C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/build/CMakeFiles/list_install_components.dir
+C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/build/CMakeFiles/install.dir
+C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/build/CMakeFiles/install/local.dir
+C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/build/CMakeFiles/install/strip.dir
+C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/build/CMakeFiles/Text_Editor_autogen_timestamp_deps.dir
+C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/build/CMakeFiles/Text_Editor_autogen.dir

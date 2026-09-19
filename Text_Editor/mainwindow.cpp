@@ -9,6 +9,10 @@
 #include <QApplication>
 #include <QProcess>
 #include "settings.h"
+#include <QTabWidget>
+#include <QDebug>
+#include <QWidget>
+#include <QVBoxLayout>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -439,5 +443,18 @@ void MainWindow::on_actionTheme_triggered()
 {
     Settings *gameWindow = new Settings();
     gameWindow->show();
+}
+
+
+void MainWindow::on_tabWidget_tabBarDoubleClicked(int index)
+{
+    Q_UNUSED(index);
+
+    QWidget *newTabPage = new QWidget();
+    QVBoxLayout *layout = new QVBoxLayout(newTabPage);
+    QTextEdit *textEdit = new QTextEdit(newTabPage);
+    layout->addWidget(textEdit);
+    ui->tabWidget->addTab(newTabPage, tr("Untitled"));
+    ui->tabWidget->setCurrentWidget(newTabPage);
 }
 

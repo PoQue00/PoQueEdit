@@ -33,6 +33,10 @@ void Settings::on_comboBox_currentTextChanged(const QString &arg1)
             "QMenuBar::item, QMenu::item { background-color: transparent; padding: 6px 10px; }"
             "QMenuBar::item:selected, QMenu::item:selected { background-color: " + selectedBackground + "; color: white; }"
             "QComboBox QAbstractItemView { background-color: " + widgetBackground + "; color: " + foreground + "; selection-background-color: " + selectedBackground + "; selection-color: white; border: 1px solid " + border + "; }"
+            "QTabWidget::pane { background-color: " + widgetBackground + "; border: 1px solid " + border + "; border-radius: 5px; }"
+            "QTabBar::tab { background-color: " + widgetBackground + "; color: " + foreground + "; border: 1px solid " + border + "; border-bottom: none; border-top-left-radius: 5px; border-top-right-radius: 5px; padding: 6px 12px; }"
+            "QTabBar::tab:selected { background-color: " + selectedBackground + "; color: " + foreground + "; border: 1px solid " + hoverBorder + "; border-bottom: none; }"
+            "QTabBar::tab:hover { background-color: " + selectedBackground + "; border: 1px solid " + hoverBorder + "; }"
         );
     };
 
@@ -85,6 +89,34 @@ void Settings::on_comboBox_currentTextChanged(const QString &arg1)
                     "selection-background-color: #3a3b3f;"
                     "selection-color: white;"
                     "border: 1px solid #4a4b4f;"
+                    "}"
+
+                    "QTabWidget::pane {"
+                    "background-color: #202124;"
+                    "border: 1px solid #4a4b4f;"
+                    "border-radius: 5px;"
+                    "}"
+
+                    "QTabBar::tab {"
+                    "background-color: #292a2d;"
+                    "color: #d6d6d6;"
+                    "border: 1px solid #4a4b4f;"
+                    "border-bottom: none;"
+                    "border-top-left-radius: 5px;"
+                    "border-top-right-radius: 5px;"
+                    "padding: 6px 12px;"
+                    "}"
+
+                    "QTabBar::tab:selected {"
+                    "background-color: #3a3b3f;"
+                    "color: white;"
+                    "border: 1px solid #707177;"
+                    "border-bottom: none;"
+                    "}"
+
+                    "QTabBar::tab:hover {"
+                    "background-color: #3a3b3f;"
+                    "border: 1px solid #707177;"
                     "}"
 
         );
@@ -141,6 +173,34 @@ void Settings::on_comboBox_currentTextChanged(const QString &arg1)
                     "border: 1px solid #c7c7c7;"
                     "}"
 
+                    "QTabWidget::pane {"
+                    "background-color: #f2f2f2;"
+                    "border: 1px solid #c7c7c7;"
+                    "border-radius: 5px;"
+                    "}"
+
+                    "QTabBar::tab {"
+                    "background-color: #ffffff;"
+                    "color: #202124;"
+                    "border: 1px solid #c7c7c7;"
+                    "border-bottom: none;"
+                    "border-top-left-radius: 5px;"
+                    "border-top-right-radius: 5px;"
+                    "padding: 6px 12px;"
+                    "}"
+
+                    "QTabBar::tab:selected {"
+                    "background-color: #e5e5e5;"
+                    "color: #202124;"
+                    "border: 1px solid #999999;"
+                    "border-bottom: none;"
+                    "}"
+
+                    "QTabBar::tab:hover {"
+                    "background-color: #e5e5e5;"
+                    "border: 1px solid #999999;"
+                    "}"
+
         );
     }
 
@@ -193,6 +253,34 @@ void Settings::on_comboBox_currentTextChanged(const QString &arg1)
                     "selection-background-color: #333333;"
                     "selection-color: white;"
                     "border: 1px solid #333333;"
+                    "}"
+
+                    "QTabWidget::pane {"
+                    "background-color: #121212;"
+                    "border: 1px solid #333333;"
+                    "border-radius: 5px;"
+                    "}"
+
+                    "QTabBar::tab {"
+                    "background-color: #1e1e1e;"
+                    "color: #eeeeee;"
+                    "border: 1px solid #333333;"
+                    "border-bottom: none;"
+                    "border-top-left-radius: 5px;"
+                    "border-top-right-radius: 5px;"
+                    "padding: 6px 12px;"
+                    "}"
+
+                    "QTabBar::tab:selected {"
+                    "background-color: #333333;"
+                    "color: white;"
+                    "border: 1px solid #555555;"
+                    "border-bottom: none;"
+                    "}"
+
+                    "QTabBar::tab:hover {"
+                    "background-color: #333333;"
+                    "border: 1px solid #555555;"
                     "}"
 
         );
@@ -249,6 +337,34 @@ void Settings::on_comboBox_currentTextChanged(const QString &arg1)
                     "border: 1px solid #632222;"
                     "}"
 
+                    "QTabWidget::pane {"
+                    "background-color: #180909;"
+                    "border: 1px solid #632222;"
+                    "border-radius: 5px;"
+                    "}"
+
+                    "QTabBar::tab {"
+                    "background-color: #260f0f;"
+                    "color: #f2dada;"
+                    "border: 1px solid #632222;"
+                    "border-bottom: none;"
+                    "border-top-left-radius: 5px;"
+                    "border-top-right-radius: 5px;"
+                    "padding: 6px 12px;"
+                    "}"
+
+                    "QTabBar::tab:selected {"
+                    "background-color: #5c1c1c;"
+                    "color: white;"
+                    "border: 1px solid #963737;"
+                    "border-bottom: none;"
+                    "}"
+
+                    "QTabBar::tab:hover {"
+                    "background-color: #5c1c1c;"
+                    "border: 1px solid #963737;"
+                    "}"
+
         );
     }
 
@@ -263,6 +379,10 @@ void Settings::on_comboBox_currentTextChanged(const QString &arg1)
             "QMenuBar::item, QMenu::item { background-color: transparent; padding: 6px 10px; }"
             "QMenuBar::item:selected, QMenu::item:selected { background-color: #5c3214; color: white; }"
             "QComboBox QAbstractItemView { background-color: #321d0d; color: #ffe8d1; selection-background-color: #5c3214; selection-color: white; border: 1px solid #8a4b19; }"
+            "QTabWidget::pane { background-color: #1f1208; border: 1px solid #8a4b19; border-radius: 5px; }"
+            "QTabBar::tab { background-color: #321d0d; color: #ffe0c2; border: 1px solid #8a4b19; border-bottom: none; border-top-left-radius: 5px; border-top-right-radius: 5px; padding: 6px 12px; }"
+            "QTabBar::tab:selected { background-color: #5c3214; color: white; border: 1px solid #c76b22; border-bottom: none; }"
+            "QTabBar::tab:hover { background-color: #5c3214; border: 1px solid #c76b22; }"
         );
     }
 
@@ -277,6 +397,10 @@ void Settings::on_comboBox_currentTextChanged(const QString &arg1)
             "QMenuBar::item, QMenu::item { background-color: transparent; padding: 6px 10px; }"
             "QMenuBar::item:selected, QMenu::item:selected { background-color: #554d12; color: white; }"
             "QComboBox QAbstractItemView { background-color: #302b0b; color: #fff8d6; selection-background-color: #554d12; selection-color: white; border: 1px solid #81721b; }"
+            "QTabWidget::pane { background-color: #1d1a08; border: 1px solid #81721b; border-radius: 5px; }"
+            "QTabBar::tab { background-color: #302b0b; color: #fff5bd; border: 1px solid #81721b; border-bottom: none; border-top-left-radius: 5px; border-top-right-radius: 5px; padding: 6px 12px; }"
+            "QTabBar::tab:selected { background-color: #554d12; color: white; border: 1px solid #b5a329; border-bottom: none; }"
+            "QTabBar::tab:hover { background-color: #554d12; border: 1px solid #b5a329; }"
         );
     }
 
@@ -291,6 +415,10 @@ void Settings::on_comboBox_currentTextChanged(const QString &arg1)
             "QMenuBar::item, QMenu::item { background-color: transparent; padding: 6px 10px; }"
             "QMenuBar::item:selected, QMenu::item:selected { background-color: #18512e; color: white; }"
             "QComboBox QAbstractItemView { background-color: #0d2b19; color: #d9f8e2; selection-background-color: #18512e; selection-color: white; border: 1px solid #236c3d; }"
+            "QTabWidget::pane { background-color: #081c10; border: 1px solid #236c3d; border-radius: 5px; }"
+            "QTabBar::tab { background-color: #0d2b19; color: #c9f3d5; border: 1px solid #236c3d; border-bottom: none; border-top-left-radius: 5px; border-top-right-radius: 5px; padding: 6px 12px; }"
+            "QTabBar::tab:selected { background-color: #18512e; color: white; border: 1px solid #369957; border-bottom: none; }"
+            "QTabBar::tab:hover { background-color: #18512e; border: 1px solid #369957; }"
         );
     }
 
@@ -305,6 +433,10 @@ void Settings::on_comboBox_currentTextChanged(const QString &arg1)
             "QMenuBar::item, QMenu::item { background-color: transparent; padding: 6px 10px; }"
             "QMenuBar::item:selected, QMenu::item:selected { background-color: #16466b; color: white; }"
             "QComboBox QAbstractItemView { background-color: #0d2438; color: #d9efff; selection-background-color: #16466b; selection-color: white; border: 1px solid #245c86; }"
+            "QTabWidget::pane { background-color: #081522; border: 1px solid #245c86; border-radius: 5px; }"
+            "QTabBar::tab { background-color: #0d2438; color: #c9e8ff; border: 1px solid #245c86; border-bottom: none; border-top-left-radius: 5px; border-top-right-radius: 5px; padding: 6px 12px; }"
+            "QTabBar::tab:selected { background-color: #16466b; color: white; border: 1px solid #378bc2; border-bottom: none; }"
+            "QTabBar::tab:hover { background-color: #16466b; border: 1px solid #378bc2; }"
         );
     }
 
@@ -319,6 +451,10 @@ void Settings::on_comboBox_currentTextChanged(const QString &arg1)
             "QMenuBar::item, QMenu::item { background-color: transparent; padding: 6px 10px; }"
             "QMenuBar::item:selected, QMenu::item:selected { background-color: #45236a; color: white; }"
             "QComboBox QAbstractItemView { background-color: #241236; color: #f0e1ff; selection-background-color: #45236a; selection-color: white; border: 1px solid #63378c; }"
+            "QTabWidget::pane { background-color: #160d21; border: 1px solid #63378c; border-radius: 5px; }"
+            "QTabBar::tab { background-color: #241236; color: #ead7ff; border: 1px solid #63378c; border-bottom: none; border-top-left-radius: 5px; border-top-right-radius: 5px; padding: 6px 12px; }"
+            "QTabBar::tab:selected { background-color: #45236a; color: white; border: 1px solid #8c52c4; border-bottom: none; }"
+            "QTabBar::tab:hover { background-color: #45236a; border: 1px solid #8c52c4; }"
         );
     }
 
@@ -333,6 +469,10 @@ void Settings::on_comboBox_currentTextChanged(const QString &arg1)
             "QMenuBar::item, QMenu::item { background-color: transparent; padding: 6px 10px; }"
             "QMenuBar::item:selected, QMenu::item:selected { background-color: #612343; color: white; }"
             "QComboBox QAbstractItemView { background-color: #351326; color: #ffe4ef; selection-background-color: #612343; selection-color: white; border: 1px solid #8c3e62; }"
+            "QTabWidget::pane { background-color: #210d18; border: 1px solid #8c3e62; border-radius: 5px; }"
+            "QTabBar::tab { background-color: #351326; color: #ffd9e8; border: 1px solid #8c3e62; border-bottom: none; border-top-left-radius: 5px; border-top-right-radius: 5px; padding: 6px 12px; }"
+            "QTabBar::tab:selected { background-color: #612343; color: white; border: 1px solid #c45a88; border-bottom: none; }"
+            "QTabBar::tab:hover { background-color: #612343; border: 1px solid #c45a88; }"
         );
     }
 
@@ -347,6 +487,10 @@ void Settings::on_comboBox_currentTextChanged(const QString &arg1)
             "QMenuBar::item, QMenu::item { background-color: transparent; padding: 6px 10px; }"
             "QMenuBar::item:selected, QMenu::item:selected { background-color: #15565a; color: white; }"
             "QComboBox QAbstractItemView { background-color: #0b2b2e; color: #d8ffff; selection-background-color: #15565a; selection-color: white; border: 1px solid #23767a; }"
+            "QTabWidget::pane { background-color: #071b1d; border: 1px solid #23767a; border-radius: 5px; }"
+            "QTabBar::tab { background-color: #0b2b2e; color: #c7f5f5; border: 1px solid #23767a; border-bottom: none; border-top-left-radius: 5px; border-top-right-radius: 5px; padding: 6px 12px; }"
+            "QTabBar::tab:selected { background-color: #15565a; color: white; border: 1px solid #38a9ad; border-bottom: none; }"
+            "QTabBar::tab:hover { background-color: #15565a; border: 1px solid #38a9ad; }"
         );
     }
 

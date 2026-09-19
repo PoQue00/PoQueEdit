@@ -1,0 +1,26 @@
+[
+{
+  "directory": "C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/build",
+  "command": "C:\\Users\\Gavin\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 -I\"C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/build/Text_Editor_autogen/include\" -isystem C:/Users/Gavin/Qt/6.11.2/mingw_64/include/QtCore -isystem C:/Users/Gavin/Qt/6.11.2/mingw_64/include -isystem C:/Users/Gavin/Qt/6.11.2/mingw_64/mkspecs/win32-g++ -isystem C:/Users/Gavin/Qt/6.11.2/mingw_64/include/QtWidgets -isystem C:/Users/Gavin/Qt/6.11.2/mingw_64/include/QtGui -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG -g -o CMakeFiles\\Text_Editor.dir\\Text_Editor_autogen\\mocs_compilation.cpp.obj -c \"C:\\Users\\Gavin\\OneDrive\\Documents\\cpp\\Projects\\Text Editor\\build\\Text_Editor_autogen\\mocs_compilation.cpp\"",
+  "file": "C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/build/Text_Editor_autogen/mocs_compilation.cpp",
+  "output": "C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/build/CMakeFiles/Text_Editor.dir/Text_Editor_autogen/mocs_compilation.cpp.obj"
+},
+{
+  "directory": "C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/build",
+  "command": "C:\\Users\\Gavin\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 -I\"C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/build/Text_Editor_autogen/include\" -isystem C:/Users/Gavin/Qt/6.11.2/mingw_64/include/QtCore -isystem C:/Users/Gavin/Qt/6.11.2/mingw_64/include -isystem C:/Users/Gavin/Qt/6.11.2/mingw_64/mkspecs/win32-g++ -isystem C:/Users/Gavin/Qt/6.11.2/mingw_64/include/QtWidgets -isystem C:/Users/Gavin/Qt/6.11.2/mingw_64/include/QtGui -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG -g -o CMakeFiles\\Text_Editor.dir\\main.cpp.obj -c \"C:\\Users\\Gavin\\OneDrive\\Documents\\cpp\\Projects\\Text Editor\\Text_Editor\\main.cpp\"",
+  "file": "C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/Text_Editor/main.cpp",
+  "output": "C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/build/CMakeFiles/Text_Editor.dir/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/build",
+  "command": "C:\\Users\\Gavin\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 -I\"C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/build/Text_Editor_autogen/include\" -isystem C:/Users/Gavin/Qt/6.11.2/mingw_64/include/QtCore -isystem C:/Users/Gavin/Qt/6.11.2/mingw_64/include -isystem C:/Users/Gavin/Qt/6.11.2/mingw_64/mkspecs/win32-g++ -isystem C:/Users/Gavin/Qt/6.11.2/mingw_64/include/QtWidgets -isystem C:/Users/Gavin/Qt/6.11.2/mingw_64/include/QtGui -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG -g -o CMakeFiles\\Text_Editor.dir\\mainwindow.cpp.obj -c \"C:\\Users\\Gavin\\OneDrive\\Documents\\cpp\\Projects\\Text Editor\\Text_Editor\\mainwindow.cpp\"",
+  "file": "C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/Text_Editor/mainwindow.cpp",
+  "output": "C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/build/CMakeFiles/Text_Editor.dir/mainwindow.cpp.obj"
+},
+{
+  "directory": "C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/build",
+  "command": "C:\\Users\\Gavin\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 -I\"C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/build/Text_Editor_autogen/include\" -isystem C:/Users/Gavin/Qt/6.11.2/mingw_64/include/QtCore -isystem C:/Users/Gavin/Qt/6.11.2/mingw_64/include -isystem C:/Users/Gavin/Qt/6.11.2/mingw_64/mkspecs/win32-g++ -isystem C:/Users/Gavin/Qt/6.11.2/mingw_64/include/QtWidgets -isystem C:/Users/Gavin/Qt/6.11.2/mingw_64/include/QtGui -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG -g -o CMakeFiles\\Text_Editor.dir\\settings.cpp.obj -c \"C:\\Users\\Gavin\\OneDrive\\Documents\\cpp\\Projects\\Text Editor\\Text_Editor\\settings.cpp\"",
+  "file": "C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/Text_Editor/settings.cpp",
+  "output": "C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/build/CMakeFiles/Text_Editor.dir/settings.cpp.obj"
+}
+]
