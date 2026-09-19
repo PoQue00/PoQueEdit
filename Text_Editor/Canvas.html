@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>PoQueEdit</title>
+<style>
+  @page { size: landscape; margin: 0; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #1e1e1e; color: #dcdcdc; }
+  .canvas { position: relative; width: 2360px; height: 1249px; }
+  .node { position: absolute; padding: 8px 10px; border-radius: 6px; font-size: 12px; line-height: 1.4; }
+  .node-text { overflow: hidden; background: #2a2a2a; border: 1px solid #444; }
+  .node a { color: #7eb8da; text-decoration: none; }
+  .node a:hover { text-decoration: underline; color: #a0d4f0; }
+  .node-text.color-1 { background: #4a2020; border-color: #c44; }
+  .node-text.color-2 { background: #4a3520; border-color: #c84; }
+  .node-text.color-3 { background: #2d2040; border-color: #9775d4; }
+  .node-text.color-4 { background: #1a3a2a; border-color: #4a8; }
+  .node-text.color-5 { background: #1a2a3a; border-color: #48a; }
+  .node-text.color-6 { background: #3a1a3a; border-color: #a48; }
+  .node-group { background: rgba(80,80,120,0.12); border: 1.5px dashed #667; border-radius: 10px; padding: 0; overflow: visible; }
+  .group-label { position: absolute; top: -24px; left: 12px; font-size: 18px; font-weight: 600; color: #aab; background: #1e1e1e; padding: 0 6px; white-space: nowrap; }
+  .node h1, .node h2 { font-size: 13px; margin-bottom: 4px; color: #f0c060; }
+  .node em { color: #aaa; font-style: italic; }
+  .node strong { color: #eee; }
+  .node ul { margin-left: 14px; font-size: 11px; }
+  .node ul li { margin-bottom: 2px; }
+  svg.edges { position: absolute; top: 0; left: 0; width: 2360px; height: 1249px; pointer-events: none; }
+</style>
+</head>
+<body>
+<div class="canvas" id="canvas">
+<svg class="edges" id="edges"></svg>
+</div>
+<script>
+const OX = 640;
+const OY = 349;
+const canvasData = {"nodes":[{"id":"aaf1ca9037a959ae","type":"text","text":"New","x":-100,"y":-169,"width":77,"height":60},{"id":"91fe44d1c91f8413","type":"text","text":"- [x] Blank\n- [x] Custom\n- [x] .txt\n- [x] .cpp\n- [x] .c\n- [x] .html\n- [x] .css\n- [x] .js","x":20,"y":-269,"width":132,"height":260},{"id":"4b93df5270aa2a8f","type":"text","text":"- [x] Blank\n- [x] Custom\n- [x] .txt\n- [x] .cpp\n- [x] .c\n- [x] .html\n- [x] .css\n- [x] .js","x":20,"y":20,"width":132,"height":260},{"id":"24b039a4a8d77950","type":"text","text":"New Window","x":-160,"y":20,"width":142,"height":60},{"id":"2daf4f4d349a94ae","type":"text","text":"Open","x":-139,"y":150,"width":101,"height":60},{"id":"6e07a13646b8fbd9","type":"text","text":"Save","x":-148,"y":280,"width":96,"height":60},{"id":"6af2e815c61c49c3","type":"text","text":"- [x] Override\n- [x] New File\n- [x] Duplicate","x":20,"y":340,"width":163,"height":99},{"id":"5257f2dfe6660252","type":"text","text":"Save As","x":-151,"y":480,"width":124,"height":60},{"id":"73f40b49effe5ba5","type":"text","text":"- [x] Blank\n- [x] Custom\n- [x] .txt\n- [x] .cpp\n- [x] .c\n- [x] .html\n- [x] .css\n- [x] .js","x":35,"y":480,"width":132,"height":260},{"id":"7ce032582f20011c","type":"text","text":"Close File","x":-147,"y":610,"width":118,"height":60},{"id":"767573a2b9b24d3d","type":"text","text":"Exit App","x":-143,"y":740,"width":109,"height":60},{"id":"b8ccef18fecf91e4","type":"text","text":"- [x] File","x":-560,"y":280,"width":140,"height":60},{"id":"ece16da712785e33","type":"text","text":"- [ ] Edit","x":260,"y":280,"width":98,"height":60},{"id":"eee54302d7933bf0","type":"text","text":"- [ ] Settings","x":420,"y":280,"width":140,"height":60},{"id":"768b6509a7e5c99a","type":"text","text":"- [ ] All\n- [ ] Theme","x":620,"y":280,"width":140,"height":60},{"id":"c068710128da0e55","type":"text","text":"- [ ] Config","x":420,"y":420,"width":139,"height":60},{"id":"36e2aa46a0648f06","type":"text","text":"- [ ] Save\n- [ ] Delete\n- [ ] Reset","x":629,"y":400,"width":131,"height":101},{"id":"77631251141efe35","type":"text","text":"- [ ] Help","x":880,"y":280,"width":123,"height":60},{"id":"f40b4edeb91cba52","type":"text","text":"- [x] Github","x":1060,"y":280,"width":132,"height":60},{"id":"53e7dc9031364712","type":"text","text":"- [ ] Docs","x":1060,"y":400,"width":115,"height":60},{"id":"cef29473cfc33bbf","type":"text","text":"- [ ] About","x":1060,"y":527,"width":130,"height":60},{"id":"46cc309cc85c7de2","type":"text","text":"- [ ] Resart","x":1060,"y":640,"width":115,"height":60},{"id":"8ba2ef65eae955fd","type":"text","text":"- [ ] Check Updates","x":1060,"y":760,"width":180,"height":60},{"id":"2d9b217b2b8658a9","type":"text","text":"- [x] Repo\n- [x] Profile","x":1280,"y":269,"width":130,"height":82},{"id":"9d05d7381ad1e68c","type":"text","text":"- [x] Issues","x":1283,"y":160,"width":127,"height":60},{"id":"66209987d9dea5c3","type":"text","text":"- [x] View Issues\n- [x] Create Issue","x":1480,"y":160,"width":160,"height":60}],"edges":[{"id":"362c7e3b2f35463d","fromNode":"b8ccef18fecf91e4","fromSide":"right","toNode":"aaf1ca9037a959ae","toSide":"left"},{"id":"14d0486264cd9292","fromNode":"aaf1ca9037a959ae","fromSide":"right","toNode":"91fe44d1c91f8413","toSide":"left"},{"id":"60357d7707a6bbed","fromNode":"b8ccef18fecf91e4","fromSide":"right","toNode":"24b039a4a8d77950","toSide":"top"},{"id":"72211245ab6f6e73","fromNode":"24b039a4a8d77950","fromSide":"right","toNode":"4b93df5270aa2a8f","toSide":"left"},{"id":"a38302029575b2f2","fromNode":"b8ccef18fecf91e4","fromSide":"right","toNode":"2daf4f4d349a94ae","toSide":"top"},{"id":"9bdb07cd9ef1a4f7","fromNode":"b8ccef18fecf91e4","fromSide":"right","toNode":"6e07a13646b8fbd9","toSide":"top"},{"id":"1e2d3afae0b8ce0d","fromNode":"6e07a13646b8fbd9","fromSide":"right","toNode":"6af2e815c61c49c3","toSide":"left"},{"id":"42a07ef972eb0c80","fromNode":"b8ccef18fecf91e4","fromSide":"right","toNode":"5257f2dfe6660252","toSide":"top"},{"id":"1f4d001a94196b74","fromNode":"5257f2dfe6660252","fromSide":"right","toNode":"73f40b49effe5ba5","toSide":"left"},{"id":"71969870cf55664f","fromNode":"b8ccef18fecf91e4","fromSide":"right","toNode":"7ce032582f20011c","toSide":"top"},{"id":"7d840d116aac979d","fromNode":"b8ccef18fecf91e4","fromSide":"right","toNode":"767573a2b9b24d3d","toSide":"top"},{"id":"19a650cc6de33ed3","fromNode":"ece16da712785e33","fromSide":"right","toNode":"eee54302d7933bf0","toSide":"left"},{"id":"2d55895f1f53b4d9","fromNode":"eee54302d7933bf0","fromSide":"right","toNode":"768b6509a7e5c99a","toSide":"left"},{"id":"240bf60a5c838398","fromNode":"ece16da712785e33","fromSide":"right","toNode":"c068710128da0e55","toSide":"left"},{"id":"1cb0e700ef98d207","fromNode":"c068710128da0e55","fromSide":"right","toNode":"36e2aa46a0648f06","toSide":"left"},{"id":"ee3f044205886b45","fromNode":"77631251141efe35","fromSide":"right","toNode":"f40b4edeb91cba52","toSide":"left"},{"id":"8043a70914e6e208","fromNode":"f40b4edeb91cba52","fromSide":"right","toNode":"2d9b217b2b8658a9","toSide":"left"},{"id":"bd109bcc3d5528c4","fromNode":"77631251141efe35","fromSide":"right","toNode":"53e7dc9031364712","toSide":"left"},{"id":"ee94b8679ad34cb6","fromNode":"77631251141efe35","fromSide":"right","toNode":"cef29473cfc33bbf","toSide":"left"},{"id":"97d4c3db7731ec70","fromNode":"77631251141efe35","fromSide":"right","toNode":"46cc309cc85c7de2","toSide":"left"},{"id":"208ec0310e8af1f8","fromNode":"77631251141efe35","fromSide":"right","toNode":"8ba2ef65eae955fd","toSide":"left"},{"id":"c2232a6a0196f958","fromNode":"f40b4edeb91cba52","fromSide":"right","toNode":"9d05d7381ad1e68c","toSide":"left"},{"id":"5ece4e20d1856f3f","fromNode":"9d05d7381ad1e68c","fromSide":"right","toNode":"66209987d9dea5c3","toSide":"left"}]};
+const nodeMap = {};
+canvasData.nodes.forEach(n => { nodeMap[n.id] = n; });
+
+function md(text) {
+  return text
+    .replace(/^## (.+)$/gm, '<h2>$1</h2>')
+    .replace(/^# (.+)$/gm, '<h2>$1</h2>')
+    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+    .replace(/\*([^*\n]+)\*/g, '<em>$1</em>')
+    .replace(/_([^_\n]+)_/g, '<em>$1</em>')
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank">$1</a>')
+    .replace(/(?<!href=")(https?:\/\/[^\s<]+)/g, '<a href="$1" target="_blank">$1</a>')
+    .replace(/^\* (.+)$/gm, '<li>$1</li>')
+    .replace(/(<li>.*<\/li>)/gs, '<ul>$1</ul>')
+    .replace(/<\/ul>\s*<ul>/g, '')
+    .replace(/\n/g, '<br>')
+    .replace(/<br>\s*(<\/?[uo]l>|<li>)/g, '$1')
+    .replace(/(<\/?[uo]l>|<\/li>)\s*<br>/g, '$1');
+}
+
+const canvas = document.getElementById('canvas');
+
+canvasData.nodes.filter(n => n.type === 'group').forEach(n => {
+  const div = document.createElement('div');
+  div.className = 'node node-group';
+  if (n.color && n.color.startsWith('#')) { div.style.borderColor = n.color; }
+  div.style.left = (n.x + OX) + 'px';
+  div.style.top = (n.y + OY) + 'px';
+  div.style.width = n.width + 'px';
+  div.style.height = n.height + 'px';
+  if (n.label) { const lbl = document.createElement('span'); lbl.className = 'group-label'; lbl.textContent = n.label; div.appendChild(lbl); }
+  canvas.appendChild(div);
+});
+
+canvasData.nodes.filter(n => n.type !== 'group').forEach(n => {
+  const div = document.createElement('div');
+  const isHex = n.color && n.color.startsWith('#');
+  div.className = 'node node-text' + (n.color && !isHex ? ' color-' + n.color : '');
+  if (isHex) { div.style.borderColor = n.color; }
+  div.style.left = (n.x + OX) + 'px';
+  div.style.top = (n.y + OY) + 'px';
+  div.style.width = n.width + 'px';
+  div.style.height = n.height + 'px';
+  if (n.type === 'text') {
+    div.innerHTML = md(n.text);
+  } else if (n.type === 'file') {
+    const fname = n.file.split('/').pop();
+    div.innerHTML = '\ud83d\udcc4 ' + fname + (n.subpath ? ' ' + n.subpath : '');
+  } else if (n.type === 'link') {
+    div.innerHTML = '<div style="font-size:10px;opacity:0.5;margin-bottom:2px">[embedded URL]</div>' +
+      '<a href="' + n.url + '" target="_blank">' + n.url + '</a>';
+  }
+  canvas.appendChild(div);
+});
+
+const svg = document.getElementById('edges');
+canvasData.edges.forEach(e => {
+  const from = nodeMap[e.fromNode];
+  const to = nodeMap[e.toNode];
+  if (!from || !to) return;
+  function anchor(node, side) {
+    const x = node.x + OX, y = node.y + OY;
+    switch(side) {
+      case 'top': return {x: x+node.width/2, y};
+      case 'bottom': return {x: x+node.width/2, y: y+node.height};
+      case 'left': return {x, y: y+node.height/2};
+      case 'right': return {x: x+node.width, y: y+node.height/2};
+      default: return {x: x+node.width/2, y: y+node.height/2};
+    }
+  }
+  const p1 = anchor(from, e.fromSide);
+  const p2 = anchor(to, e.toSide);
+  let cp1, cp2;
+  if (e.fromSide === 'bottom' && e.toSide === 'top') {
+    const off = Math.min(Math.abs(p2.y-p1.y)*0.5, 60);
+    cp1 = {x:p1.x, y:p1.y+off}; cp2 = {x:p2.x, y:p2.y-off};
+  } else if (e.fromSide === 'right' && e.toSide === 'left') {
+    const off = Math.min(Math.abs(p2.x-p1.x)*0.4, 80);
+    cp1 = {x:p1.x+off, y:p1.y}; cp2 = {x:p2.x-off, y:p2.y};
+  } else {
+    const dx=p2.x-p1.x, dy=p2.y-p1.y;
+    cp1 = {x:p1.x+dx*0.3, y:p1.y+dy*0.3}; cp2 = {x:p1.x+dx*0.7, y:p1.y+dy*0.7};
+  }
+  const path = document.createElementNS('http://www.w3.org/2000/svg','path');
+  path.setAttribute('d','M '+p1.x+' '+p1.y+' C '+cp1.x+' '+cp1.y+', '+cp2.x+' '+cp2.y+', '+p2.x+' '+p2.y);
+  path.setAttribute('stroke','#667');
+  path.setAttribute('stroke-width','1.5');
+  path.setAttribute('fill','none');
+  path.setAttribute('opacity','0.6');
+  const angle = Math.atan2(p2.y-cp2.y, p2.x-cp2.x);
+  const al=8;
+  const arrow = document.createElementNS('http://www.w3.org/2000/svg','polygon');
+  arrow.setAttribute('points', p2.x+','+p2.y+' '+(p2.x-al*Math.cos(angle-0.4))+','+(p2.y-al*Math.sin(angle-0.4))+' '+(p2.x-al*Math.cos(angle+0.4))+','+(p2.y-al*Math.sin(angle+0.4)));
+  arrow.setAttribute('fill','#667');
+  arrow.setAttribute('opacity','0.6');
+  svg.appendChild(path);
+  svg.appendChild(arrow);
+});
+</script>
+</body>
+</html>
