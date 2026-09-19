@@ -49,7 +49,6 @@ public:
     QAction *actionAll;
     QAction *actionTheme;
     QAction *actionRepository;
-    QAction *actionIssues;
     QAction *actionProfile;
     QAction *actionAbout;
     QAction *actionRestart;
@@ -66,6 +65,8 @@ public:
     QAction *action_css_3;
     QAction *action_js_3;
     QAction *actioncurrent;
+    QAction *actionView_Issues;
+    QAction *actionCreate_Issue;
     QWidget *centralwidget;
     QLabel *Ln_Col;
     QLabel *Chars;
@@ -81,6 +82,7 @@ public:
     QMenu *menuConfig;
     QMenu *menuHelp;
     QMenu *menuGithub;
+    QMenu *menuIssues;
 
     void setupUi(QMainWindow *MainWindow)
     {
@@ -137,8 +139,6 @@ public:
         actionTheme->setObjectName("actionTheme");
         actionRepository = new QAction(MainWindow);
         actionRepository->setObjectName("actionRepository");
-        actionIssues = new QAction(MainWindow);
-        actionIssues->setObjectName("actionIssues");
         actionProfile = new QAction(MainWindow);
         actionProfile->setObjectName("actionProfile");
         actionAbout = new QAction(MainWindow);
@@ -171,6 +171,10 @@ public:
         action_js_3->setObjectName("action_js_3");
         actioncurrent = new QAction(MainWindow);
         actioncurrent->setObjectName("actioncurrent");
+        actionView_Issues = new QAction(MainWindow);
+        actionView_Issues->setObjectName("actionView_Issues");
+        actionCreate_Issue = new QAction(MainWindow);
+        actionCreate_Issue->setObjectName("actionCreate_Issue");
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
         Ln_Col = new QLabel(centralwidget);
@@ -206,6 +210,8 @@ public:
         menuHelp->setObjectName("menuHelp");
         menuGithub = new QMenu(menuHelp);
         menuGithub->setObjectName("menuGithub");
+        menuIssues = new QMenu(menuGithub);
+        menuIssues->setObjectName("menuIssues");
         MainWindow->setMenuBar(menubar);
 
         menubar->addAction(menuFile->menuAction());
@@ -272,8 +278,10 @@ public:
         menuHelp->addAction(actionCheck_Updates);
         menuHelp->addSeparator();
         menuGithub->addAction(actionRepository);
-        menuGithub->addAction(actionIssues);
+        menuGithub->addAction(menuIssues->menuAction());
         menuGithub->addAction(actionProfile);
+        menuIssues->addAction(actionView_Issues);
+        menuIssues->addAction(actionCreate_Issue);
 
         retranslateUi(MainWindow);
 
@@ -308,7 +316,6 @@ public:
         actionAll->setText(QCoreApplication::translate("MainWindow", "All", nullptr));
         actionTheme->setText(QCoreApplication::translate("MainWindow", "Theme", nullptr));
         actionRepository->setText(QCoreApplication::translate("MainWindow", "Repository", nullptr));
-        actionIssues->setText(QCoreApplication::translate("MainWindow", "Issues", nullptr));
         actionProfile->setText(QCoreApplication::translate("MainWindow", "Profile", nullptr));
         actionAbout->setText(QCoreApplication::translate("MainWindow", "About", nullptr));
         actionRestart->setText(QCoreApplication::translate("MainWindow", "Restart", nullptr));
@@ -325,6 +332,8 @@ public:
         action_css_3->setText(QCoreApplication::translate("MainWindow", ".css", nullptr));
         action_js_3->setText(QCoreApplication::translate("MainWindow", ".js", nullptr));
         actioncurrent->setText(QCoreApplication::translate("MainWindow", "current", nullptr));
+        actionView_Issues->setText(QCoreApplication::translate("MainWindow", "View Issues", nullptr));
+        actionCreate_Issue->setText(QCoreApplication::translate("MainWindow", "Create Issue", nullptr));
         Ln_Col->setText(QCoreApplication::translate("MainWindow", "Ln: , Col:", nullptr));
         Chars->setText(QCoreApplication::translate("MainWindow", "Characters:", nullptr));
         textEdit->setHtml(QCoreApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
@@ -345,6 +354,7 @@ public:
         menuConfig->setTitle(QCoreApplication::translate("MainWindow", "Config", nullptr));
         menuHelp->setTitle(QCoreApplication::translate("MainWindow", "Help", nullptr));
         menuGithub->setTitle(QCoreApplication::translate("MainWindow", "Github", nullptr));
+        menuIssues->setTitle(QCoreApplication::translate("MainWindow", "Issues", nullptr));
     } // retranslateUi
 
 };

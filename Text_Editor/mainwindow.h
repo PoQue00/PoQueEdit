@@ -82,6 +82,10 @@ private slots:
 
     void on_actioncurrent_triggered();
 
+    void on_actionView_Issues_triggered();
+
+    void on_actionCreate_Issue_triggered();
+
 private:
     Ui::MainWindow *ui;
 };

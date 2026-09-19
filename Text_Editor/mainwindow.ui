@@ -168,8 +168,15 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <property name="title">
       <string>Github</string>
      </property>
+     <widget class="QMenu" name="menuIssues">
+      <property name="title">
+       <string>Issues</string>
+      </property>
+      <addaction name="actionView_Issues"/>
+      <addaction name="actionCreate_Issue"/>
+     </widget>
      <addaction name="actionRepository"/>
-     <addaction name="actionIssues"/>
+     <addaction name="menuIssues"/>
      <addaction name="actionProfile"/>
     </widget>
     <addaction name="menuGithub"/>
@@ -312,11 +319,6 @@ li.checked::marker { content: &quot;\2612&quot;; }
     <string>Repository</string>
    </property>
   </action>
-  <action name="actionIssues">
-   <property name="text">
-    <string>Issues</string>
-   </property>
-  </action>
   <action name="actionProfile">
    <property name="text">
     <string>Profile</string>
@@ -395,6 +397,16 @@ li.checked::marker { content: &quot;\2612&quot;; }
   <action name="actioncurrent">
    <property name="text">
     <string>current</string>
+   </property>
+  </action>
+  <action name="actionView_Issues">
+   <property name="text">
+    <string>View Issues</string>
+   </property>
+  </action>
+  <action name="actionCreate_Issue">
+   <property name="text">
+    <string>Create Issue</string>
    </property>
   </action>
  </widget>

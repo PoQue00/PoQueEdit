@@ -269,12 +269,6 @@ void MainWindow::on_actionRepository_triggered()
 }
 
 
-void MainWindow::on_actionIssues_triggered()
-{
-    QDesktopServices::openUrl(QUrl("https://github.com/PoQue00/PoQueEdit/issues"));
-}
-
-
 void MainWindow::on_actionProfile_triggered()
 {
     QDesktopServices::openUrl(QUrl("https://github.com/PoQue00"));
@@ -425,5 +419,17 @@ void MainWindow::on_actioncurrent_triggered()
     QFile file(folderPath + "/" + fileName + currentFileExtension);
     if (file.open(QIODevice::WriteOnly | QIODevice::Text))
         file.write(ui->textEdit->toPlainText().toUtf8());
+}
+
+
+void MainWindow::on_actionView_Issues_triggered()
+{
+    QDesktopServices::openUrl(QUrl("https://github.com/PoQue00/PoQueEdit/issues"));
+}
+
+
+void MainWindow::on_actionCreate_Issue_triggered()
+{
+    QDesktopServices::openUrl(QUrl("https://github.com/PoQue00/PoQueEdit/issues/new"));
 }
 
