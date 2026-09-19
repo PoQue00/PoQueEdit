@@ -8,6 +8,7 @@
 #include <QUrl>
 #include <QApplication>
 #include <QProcess>
+#include "settings.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -431,5 +432,12 @@ void MainWindow::on_actionView_Issues_triggered()
 void MainWindow::on_actionCreate_Issue_triggered()
 {
     QDesktopServices::openUrl(QUrl("https://github.com/PoQue00/PoQueEdit/issues/new"));
+}
+
+
+void MainWindow::on_actionTheme_triggered()
+{
+    Settings *gameWindow = new Settings();
+    gameWindow->show();
 }
 

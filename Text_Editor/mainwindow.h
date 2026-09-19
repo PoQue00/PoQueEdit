@@ -86,6 +86,8 @@ private slots:
 
     void on_actionCreate_Issue_triggered();
 
+    void on_actionTheme_triggered();
+
 private:
     Ui::MainWindow *ui;
 };

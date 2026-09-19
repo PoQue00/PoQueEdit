@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Settings</class>
+ <widget class="QMainWindow" name="Settings">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>101</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>Default</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Light</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Dark</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Light Red</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Dark Red</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Light Orange</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Dark Orange</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Light Yellow</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Dark Yellow</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Light Green</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Dark Green</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Light Blue</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Dark Blue</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Light Purple</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Dark Purple</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Light Pink</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Dark Pink</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Light Cyan</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Dark Cyan</string>
+     </property>
+    </item>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
