@@ -13,12 +13,20 @@
 #include <QDebug>
 #include <QWidget>
 #include <QVBoxLayout>
+#include <QWidget>
+#include <QKeyEvent>
+#include <QDebug>
+#include <QShortcut>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    auto *newTabShortcut = new QShortcut(QKeySequence(Qt::CTRL | Qt::Key_N), this);
+    connect(newTabShortcut, &QShortcut::activated, this, [this]() {
+        on_tabWidget_tabBarDoubleClicked(0);
+    });
 }
 
 MainWindow::~MainWindow()
