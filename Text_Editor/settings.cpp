@@ -15,6 +15,7 @@ Settings::~Settings()
     delete ui;
 }
 
+QString currentTheme = "Default";
 
 void Settings::on_comboBox_currentTextChanged(const QString &arg1)
 {

@@ -1,106 +1,68 @@
 # ninja log v7
-53	1956	8115218464496730	Text_Editor_autogen/timestamp	53d21aec6082a0f9
-53	1956	8115218464496730	Text_Editor_autogen/mocs_compilation.cpp	53d21aec6082a0f9
-53	1956	8115218464496730	C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/Text_Editor/build/Desktop_x86_windows_msys_pe_64bit_Debug/Text_Editor_autogen/timestamp	53d21aec6082a0f9
-53	1956	8115218464496730	C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/Text_Editor/build/Desktop_x86_windows_msys_pe_64bit_Debug/Text_Editor_autogen/mocs_compilation.cpp	53d21aec6082a0f9
-38	3983	8115205993771068	CMakeFiles/Text_Editor.dir/Text_Editor_autogen/mocs_compilation.cpp.obj	1f1bfdb442f3eef0
-6419	15053	8115198292538833	CMakeFiles/Text_Editor.dir/main.cpp.obj	825e7ab31a8494b1
-1958	13632	8115218483546967	CMakeFiles/Text_Editor.dir/mainwindow.cpp.obj	4a73efec4e359bec
-11150	13344	8115214929068346	Text_Editor.exe	5226b8035e09fc04
-412	9195	8115214821689258	CMakeFiles/Text_Editor.dir/settings.cpp.obj	1f9846c59ccf8a0
-39	824	8115219064046007	Text_Editor_autogen/timestamp	53d21aec6082a0f9
-39	824	8115219064046007	Text_Editor_autogen/mocs_compilation.cpp	53d21aec6082a0f9
-39	824	8115219064046007	C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/Text_Editor/build/Desktop_x86_windows_msys_pe_64bit_Debug/Text_Editor_autogen/timestamp	53d21aec6082a0f9
-39	824	8115219064046007	C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/Text_Editor/build/Desktop_x86_windows_msys_pe_64bit_Debug/Text_Editor_autogen/mocs_compilation.cpp	53d21aec6082a0f9
-830	8159	8115219071968048	CMakeFiles/Text_Editor.dir/settings.cpp.obj	1f9846c59ccf8a0
-825	9817	8115219071907816	CMakeFiles/Text_Editor.dir/mainwindow.cpp.obj	4a73efec4e359bec
-9817	12630	8115219161825473	Text_Editor.exe	5226b8035e09fc04
-25	771	8115220223231196	Text_Editor_autogen/timestamp	53d21aec6082a0f9
-25	771	8115220223231196	Text_Editor_autogen/mocs_compilation.cpp	53d21aec6082a0f9
-25	771	8115220223231196	C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/Text_Editor/build/Desktop_x86_windows_msys_pe_64bit_Debug/Text_Editor_autogen/timestamp	53d21aec6082a0f9
-25	771	8115220223231196	C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/Text_Editor/build/Desktop_x86_windows_msys_pe_64bit_Debug/Text_Editor_autogen/mocs_compilation.cpp	53d21aec6082a0f9
-778	8187	8115220230998720	CMakeFiles/Text_Editor.dir/settings.cpp.obj	1f9846c59ccf8a0
-772	9456	8115220230688544	CMakeFiles/Text_Editor.dir/mainwindow.cpp.obj	4a73efec4e359bec
-9457	10280	8115220317581136	Text_Editor.exe	5226b8035e09fc04
-77	2675	8115220568920534	Text_Editor_autogen/timestamp	53d21aec6082a0f9
-77	2675	8115220568920534	Text_Editor_autogen/mocs_compilation.cpp	53d21aec6082a0f9
-77	2675	8115220568920534	C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/Text_Editor/build/Desktop_x86_windows_msys_pe_64bit_Debug/Text_Editor_autogen/timestamp	53d21aec6082a0f9
-77	2675	8115220568920534	C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/Text_Editor/build/Desktop_x86_windows_msys_pe_64bit_Debug/Text_Editor_autogen/mocs_compilation.cpp	53d21aec6082a0f9
-2682	19743	8115220594972748	CMakeFiles/Text_Editor.dir/settings.cpp.obj	1f9846c59ccf8a0
-2676	22441	8115220594907821	CMakeFiles/Text_Editor.dir/mainwindow.cpp.obj	4a73efec4e359bec
-22441	26744	8115220792562524	Text_Editor.exe	5226b8035e09fc04
-38	859	8115222081543239	Text_Editor_autogen/timestamp	53d21aec6082a0f9
-38	859	8115222081543239	Text_Editor_autogen/mocs_compilation.cpp	53d21aec6082a0f9
-38	859	8115222081543239	C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/Text_Editor/build/Desktop_x86_windows_msys_pe_64bit_Debug/Text_Editor_autogen/timestamp	53d21aec6082a0f9
-38	859	8115222081543239	C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/Text_Editor/build/Desktop_x86_windows_msys_pe_64bit_Debug/Text_Editor_autogen/mocs_compilation.cpp	53d21aec6082a0f9
-866	9619	8115222089838396	CMakeFiles/Text_Editor.dir/settings.cpp.obj	1f9846c59ccf8a0
-861	11842	8115222089773463	CMakeFiles/Text_Editor.dir/mainwindow.cpp.obj	4a73efec4e359bec
-11843	14095	8115222199596958	Text_Editor.exe	5226b8035e09fc04
-43	966	8115223005189836	Text_Editor_autogen/timestamp	53d21aec6082a0f9
-43	966	8115223005189836	Text_Editor_autogen/mocs_compilation.cpp	53d21aec6082a0f9
-43	966	8115223005189836	C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/Text_Editor/build/Desktop_x86_windows_msys_pe_64bit_Debug/Text_Editor_autogen/timestamp	53d21aec6082a0f9
-43	966	8115223005189836	C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/Text_Editor/build/Desktop_x86_windows_msys_pe_64bit_Debug/Text_Editor_autogen/mocs_compilation.cpp	53d21aec6082a0f9
-972	5810	8115223014484647	CMakeFiles/Text_Editor.dir/settings.cpp.obj	1f9846c59ccf8a0
-967	6437	8115223014429708	CMakeFiles/Text_Editor.dir/mainwindow.cpp.obj	4a73efec4e359bec
-6437	6847	8115223069120744	Text_Editor.exe	5226b8035e09fc04
-41	11124	8115278744865816	Text_Editor_autogen/timestamp	53d21aec6082a0f9
-41	11124	8115278744865816	Text_Editor_autogen/mocs_compilation.cpp	53d21aec6082a0f9
-41	11124	8115278744865816	C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/Text_Editor/build/Desktop_x86_windows_msys_pe_64bit_Debug/Text_Editor_autogen/timestamp	53d21aec6082a0f9
-41	11124	8115278744865816	C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/Text_Editor/build/Desktop_x86_windows_msys_pe_64bit_Debug/Text_Editor_autogen/mocs_compilation.cpp	53d21aec6082a0f9
-11134	20326	8115278758820544	CMakeFiles/Text_Editor.dir/main.cpp.obj	825e7ab31a8494b1
-11127	20347	8115278758750315	CMakeFiles/Text_Editor.dir/Text_Editor_autogen/mocs_compilation.cpp.obj	1f1bfdb442f3eef0
-11149	20483	8115278758970497	CMakeFiles/Text_Editor.dir/settings.cpp.obj	1f9846c59ccf8a0
-11141	21387	8115278758905211	CMakeFiles/Text_Editor.dir/mainwindow.cpp.obj	4a73efec4e359bec
-40	4017	8115279000695141	CMakeFiles/Text_Editor.dir/Text_Editor_autogen/mocs_compilation.cpp.obj	1f1bfdb442f3eef0
-4018	4376	8115279040472544	Text_Editor.exe	5226b8035e09fc04
-39	399	8115279892330474	Text_Editor_autogen/timestamp	53d21aec6082a0f9
-39	399	8115279892330474	Text_Editor_autogen/mocs_compilation.cpp	53d21aec6082a0f9
-39	399	8115279892330474	C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/Text_Editor/build/Desktop_x86_windows_msys_pe_64bit_Debug/Text_Editor_autogen/timestamp	53d21aec6082a0f9
-39	399	8115279892330474	C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/Text_Editor/build/Desktop_x86_windows_msys_pe_64bit_Debug/Text_Editor_autogen/mocs_compilation.cpp	53d21aec6082a0f9
-406	9594	8115279895998291	CMakeFiles/Text_Editor.dir/settings.cpp.obj	1f9846c59ccf8a0
-40	321	8115281044023375	Text_Editor_autogen/timestamp	53d21aec6082a0f9
-40	321	8115281044023375	Text_Editor_autogen/mocs_compilation.cpp	53d21aec6082a0f9
-40	321	8115281044023375	C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/Text_Editor/build/Desktop_x86_windows_msys_pe_64bit_Debug/Text_Editor_autogen/timestamp	53d21aec6082a0f9
-40	321	8115281044023375	C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/Text_Editor/build/Desktop_x86_windows_msys_pe_64bit_Debug/Text_Editor_autogen/mocs_compilation.cpp	53d21aec6082a0f9
-328	8220	8115281046908681	CMakeFiles/Text_Editor.dir/settings.cpp.obj	1f9846c59ccf8a0
-51	23961	8115281326473149	Text_Editor_autogen/timestamp	53d21aec6082a0f9
-51	23961	8115281326473149	Text_Editor_autogen/mocs_compilation.cpp	53d21aec6082a0f9
-51	23961	8115281326473149	C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/Text_Editor/build/Desktop_x86_windows_msys_pe_64bit_Debug/Text_Editor_autogen/timestamp	53d21aec6082a0f9
-51	23961	8115281326473149	C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/Text_Editor/build/Desktop_x86_windows_msys_pe_64bit_Debug/Text_Editor_autogen/mocs_compilation.cpp	53d21aec6082a0f9
-23967	29092	8115281565624120	CMakeFiles/Text_Editor.dir/settings.cpp.obj	1f9846c59ccf8a0
-51	1001	8115282452862980	Text_Editor_autogen/timestamp	53d21aec6082a0f9
-51	1001	8115282452862980	Text_Editor_autogen/mocs_compilation.cpp	53d21aec6082a0f9
-51	1001	8115282452862980	C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/Text_Editor/build/Desktop_x86_windows_msys_pe_64bit_Debug/Text_Editor_autogen/timestamp	53d21aec6082a0f9
-51	1001	8115282452862980	C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/Text_Editor/build/Desktop_x86_windows_msys_pe_64bit_Debug/Text_Editor_autogen/mocs_compilation.cpp	53d21aec6082a0f9
-1008	8904	8115282462419711	CMakeFiles/Text_Editor.dir/settings.cpp.obj	1f9846c59ccf8a0
-1002	10404	8115282462364953	CMakeFiles/Text_Editor.dir/mainwindow.cpp.obj	4a73efec4e359bec
-10404	11455	8115282556383819	Text_Editor.exe	5226b8035e09fc04
-39	537	8115283944934164	Text_Editor_autogen/timestamp	53d21aec6082a0f9
-39	537	8115283944934164	Text_Editor_autogen/mocs_compilation.cpp	53d21aec6082a0f9
-39	537	8115283944934164	C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/Text_Editor/build/Desktop_x86_windows_msys_pe_64bit_Debug/Text_Editor_autogen/timestamp	53d21aec6082a0f9
-39	537	8115283944934164	C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/Text_Editor/build/Desktop_x86_windows_msys_pe_64bit_Debug/Text_Editor_autogen/mocs_compilation.cpp	53d21aec6082a0f9
-544	6352	8115283949993298	CMakeFiles/Text_Editor.dir/settings.cpp.obj	1f9846c59ccf8a0
-538	7111	8115283949928176	CMakeFiles/Text_Editor.dir/mainwindow.cpp.obj	4a73efec4e359bec
-7111	7816	8115284015661172	Text_Editor.exe	5226b8035e09fc04
-35	767	8115286524351160	Text_Editor_autogen/timestamp	53d21aec6082a0f9
-35	767	8115286524351160	Text_Editor_autogen/mocs_compilation.cpp	53d21aec6082a0f9
-35	767	8115286524351160	C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/Text_Editor/build/Desktop_x86_windows_msys_pe_64bit_Debug/Text_Editor_autogen/timestamp	53d21aec6082a0f9
-35	767	8115286524351160	C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/Text_Editor/build/Desktop_x86_windows_msys_pe_64bit_Debug/Text_Editor_autogen/mocs_compilation.cpp	53d21aec6082a0f9
-773	10230	8115286531734581	CMakeFiles/Text_Editor.dir/settings.cpp.obj	1f9846c59ccf8a0
-41	1799	8115286699956596	Text_Editor_autogen/timestamp	53d21aec6082a0f9
-41	1799	8115286699956596	Text_Editor_autogen/mocs_compilation.cpp	53d21aec6082a0f9
-41	1799	8115286699956596	C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/Text_Editor/build/Desktop_x86_windows_msys_pe_64bit_Debug/Text_Editor_autogen/timestamp	53d21aec6082a0f9
-41	1799	8115286699956596	C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/Text_Editor/build/Desktop_x86_windows_msys_pe_64bit_Debug/Text_Editor_autogen/mocs_compilation.cpp	53d21aec6082a0f9
-1806	6612	8115286717596489	CMakeFiles/Text_Editor.dir/settings.cpp.obj	1f9846c59ccf8a0
-23	280	8116030712588014	Text_Editor_autogen/timestamp	53d21aec6082a0f9
-23	280	8116030712588014	Text_Editor_autogen/mocs_compilation.cpp	53d21aec6082a0f9
-23	280	8116030712588014	C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/Text_Editor/build/Desktop_x86_windows_msys_pe_64bit_Debug/Text_Editor_autogen/timestamp	53d21aec6082a0f9
-23	280	8116030712588014	C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/Text_Editor/build/Desktop_x86_windows_msys_pe_64bit_Debug/Text_Editor_autogen/mocs_compilation.cpp	53d21aec6082a0f9
-286	5155	8116030715218688	CMakeFiles/Text_Editor.dir/settings.cpp.obj	1f9846c59ccf8a0
 52	879	8116031235174086	Text_Editor_autogen/timestamp	53d21aec6082a0f9
 52	879	8116031235174086	Text_Editor_autogen/mocs_compilation.cpp	53d21aec6082a0f9
 52	879	8116031235174086	C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/Text_Editor/build/Desktop_x86_windows_msys_pe_64bit_Debug/Text_Editor_autogen/timestamp	53d21aec6082a0f9
 52	879	8116031235174086	C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/Text_Editor/build/Desktop_x86_windows_msys_pe_64bit_Debug/Text_Editor_autogen/mocs_compilation.cpp	53d21aec6082a0f9
-986	9247	8116031244507590	CMakeFiles/Text_Editor.dir/settings.cpp.obj	1f9846c59ccf8a0
+40	4017	8115279000695141	CMakeFiles/Text_Editor.dir/Text_Editor_autogen/mocs_compilation.cpp.obj	1f1bfdb442f3eef0
+11134	20326	8115278758820544	CMakeFiles/Text_Editor.dir/main.cpp.obj	825e7ab31a8494b1
 880	9825	8116031243446093	CMakeFiles/Text_Editor.dir/mainwindow.cpp.obj	4a73efec4e359bec
 9826	11586	8116031332909040	Text_Editor.exe	5226b8035e09fc04
+986	9247	8116031244507590	CMakeFiles/Text_Editor.dir/settings.cpp.obj	1f9846c59ccf8a0
+33	293	8116046680299256	Text_Editor_autogen/timestamp	53d21aec6082a0f9
+33	293	8116046680299256	Text_Editor_autogen/mocs_compilation.cpp	53d21aec6082a0f9
+33	293	8116046680299256	C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/Text_Editor/build/Desktop_x86_windows_msys_pe_64bit_Debug/Text_Editor_autogen/timestamp	53d21aec6082a0f9
+33	293	8116046680299256	C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/Text_Editor/build/Desktop_x86_windows_msys_pe_64bit_Debug/Text_Editor_autogen/mocs_compilation.cpp	53d21aec6082a0f9
+299	8114	8116046682962131	CMakeFiles/Text_Editor.dir/settings.cpp.obj	1f9846c59ccf8a0
+25	457	8116047061869134	Text_Editor_autogen/timestamp	53d21aec6082a0f9
+25	457	8116047061869134	Text_Editor_autogen/mocs_compilation.cpp	53d21aec6082a0f9
+25	457	8116047061869134	C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/Text_Editor/build/Desktop_x86_windows_msys_pe_64bit_Debug/Text_Editor_autogen/timestamp	53d21aec6082a0f9
+25	457	8116047061869134	C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/Text_Editor/build/Desktop_x86_windows_msys_pe_64bit_Debug/Text_Editor_autogen/mocs_compilation.cpp	53d21aec6082a0f9
+463	9288	8116047066247423	CMakeFiles/Text_Editor.dir/settings.cpp.obj	1f9846c59ccf8a0
+23	3832	8116048185941064	Text_Editor_autogen/timestamp	53d21aec6082a0f9
+23	3832	8116048185941064	Text_Editor_autogen/mocs_compilation.cpp	53d21aec6082a0f9
+23	3832	8116048185941064	C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/Text_Editor/build/Desktop_x86_windows_msys_pe_64bit_Debug/Text_Editor_autogen/timestamp	53d21aec6082a0f9
+23	3832	8116048185941064	C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/Text_Editor/build/Desktop_x86_windows_msys_pe_64bit_Debug/Text_Editor_autogen/mocs_compilation.cpp	53d21aec6082a0f9
+3839	12941	8116048195615185	CMakeFiles/Text_Editor.dir/main.cpp.obj	825e7ab31a8494b1
+3834	13191	8116048195565318	CMakeFiles/Text_Editor.dir/Text_Editor_autogen/mocs_compilation.cpp.obj	1f1bfdb442f3eef0
+3849	13829	8116048195724905	CMakeFiles/Text_Editor.dir/settings.cpp.obj	1f9846c59ccf8a0
+3844	15208	8116048195665052	CMakeFiles/Text_Editor.dir/mainwindow.cpp.obj	4a73efec4e359bec
+39	3797	8116048407568412	CMakeFiles/Text_Editor.dir/Text_Editor_autogen/mocs_compilation.cpp.obj	1f1bfdb442f3eef0
+3797	4134	8116048445147937	Text_Editor.exe	5226b8035e09fc04
+40	336	8116049580531878	Text_Editor_autogen/timestamp	53d21aec6082a0f9
+40	336	8116049580531878	Text_Editor_autogen/mocs_compilation.cpp	53d21aec6082a0f9
+40	336	8116049580531878	C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/Text_Editor/build/Desktop_x86_windows_msys_pe_64bit_Debug/Text_Editor_autogen/timestamp	53d21aec6082a0f9
+40	336	8116049580531878	C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/Text_Editor/build/Desktop_x86_windows_msys_pe_64bit_Debug/Text_Editor_autogen/mocs_compilation.cpp	53d21aec6082a0f9
+343	6843	8116049583563767	CMakeFiles/Text_Editor.dir/settings.cpp.obj	1f9846c59ccf8a0
+37	29739	8116050212531894	Text_Editor_autogen/timestamp	53d21aec6082a0f9
+37	29739	8116050212531894	Text_Editor_autogen/mocs_compilation.cpp	53d21aec6082a0f9
+37	29739	8116050212531894	C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/Text_Editor/build/Desktop_x86_windows_msys_pe_64bit_Debug/Text_Editor_autogen/timestamp	53d21aec6082a0f9
+37	29739	8116050212531894	C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/Text_Editor/build/Desktop_x86_windows_msys_pe_64bit_Debug/Text_Editor_autogen/mocs_compilation.cpp	53d21aec6082a0f9
+29745	36094	8116050213609099	CMakeFiles/Text_Editor.dir/main.cpp.obj	825e7ab31a8494b1
+29740	36434	8116050213559129	CMakeFiles/Text_Editor.dir/Text_Editor_autogen/mocs_compilation.cpp.obj	1f1bfdb442f3eef0
+29755	37146	8116050213708738	CMakeFiles/Text_Editor.dir/settings.cpp.obj	1f9846c59ccf8a0
+22	254	8116050397606988	Text_Editor_autogen/timestamp	53d21aec6082a0f9
+22	254	8116050397606988	Text_Editor_autogen/mocs_compilation.cpp	53d21aec6082a0f9
+22	254	8116050397606988	C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/Text_Editor/build/Desktop_x86_windows_msys_pe_64bit_Debug/Text_Editor_autogen/timestamp	53d21aec6082a0f9
+22	254	8116050397606988	C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/Text_Editor/build/Desktop_x86_windows_msys_pe_64bit_Debug/Text_Editor_autogen/mocs_compilation.cpp	53d21aec6082a0f9
+260	8469	8116050399990614	CMakeFiles/Text_Editor.dir/settings.cpp.obj	1f9846c59ccf8a0
+255	11001	8116050399930771	CMakeFiles/Text_Editor.dir/mainwindow.cpp.obj	4a73efec4e359bec
+37	3680	8116051012021122	CMakeFiles/Text_Editor.dir/Text_Editor_autogen/mocs_compilation.cpp.obj	1f1bfdb442f3eef0
+3681	4009	8116051048453497	Text_Editor.exe	5226b8035e09fc04
+24	1800	8116054139377503	Text_Editor_autogen/timestamp	53d21aec6082a0f9
+24	1800	8116054139377503	Text_Editor_autogen/mocs_compilation.cpp	53d21aec6082a0f9
+24	1800	8116054139377503	C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/Text_Editor/build/Desktop_x86_windows_msys_pe_64bit_Debug/Text_Editor_autogen/timestamp	53d21aec6082a0f9
+24	1800	8116054139377503	C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/Text_Editor/build/Desktop_x86_windows_msys_pe_64bit_Debug/Text_Editor_autogen/mocs_compilation.cpp	53d21aec6082a0f9
+1808	9817	8116054140803693	CMakeFiles/Text_Editor.dir/main.cpp.obj	825e7ab31a8494b1
+1802	11306	8116054140693977	CMakeFiles/Text_Editor.dir/Text_Editor_autogen/mocs_compilation.cpp.obj	1f1bfdb442f3eef0
+1826	11884	8116054141561644	CMakeFiles/Text_Editor.dir/settings.cpp.obj	1f9846c59ccf8a0
+1818	13032	8116054140893448	CMakeFiles/Text_Editor.dir/mainwindow.cpp.obj	4a73efec4e359bec
+38	2570	8116054654850548	Text_Editor_autogen/timestamp	53d21aec6082a0f9
+38	2570	8116054654850548	Text_Editor_autogen/mocs_compilation.cpp	53d21aec6082a0f9
+38	2570	8116054654850548	C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/Text_Editor/build/Desktop_x86_windows_msys_pe_64bit_Debug/Text_Editor_autogen/timestamp	53d21aec6082a0f9
+38	2570	8116054654850548	C:/Users/Gavin/OneDrive/Documents/cpp/Projects/Text Editor/Text_Editor/build/Desktop_x86_windows_msys_pe_64bit_Debug/Text_Editor_autogen/mocs_compilation.cpp	53d21aec6082a0f9
+2571	15402	8116054659837208	CMakeFiles/Text_Editor.dir/Text_Editor_autogen/mocs_compilation.cpp.obj	1f1bfdb442f3eef0
+2577	15648	8116054659897051	CMakeFiles/Text_Editor.dir/main.cpp.obj	825e7ab31a8494b1
+2587	16965	8116054659996780	CMakeFiles/Text_Editor.dir/settings.cpp.obj	1f9846c59ccf8a0
+2582	18227	8116054659946929	CMakeFiles/Text_Editor.dir/mainwindow.cpp.obj	4a73efec4e359bec
+25	3823	8116054952035861	CMakeFiles/Text_Editor.dir/Text_Editor_autogen/mocs_compilation.cpp.obj	1f1bfdb442f3eef0
+3824	4151	8116054990024273	Text_Editor.exe	5226b8035e09fc04

@@ -3,6 +3,8 @@
 
 #include <QMainWindow>
 
+class Settings;
+
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class MainWindow;
@@ -91,6 +93,9 @@ private slots:
     void on_tabWidget_tabBarDoubleClicked(int index);
 
 private:
+    void deleteTab(int index);
+    void renameTab(int index, const QString &newName);
     Ui::MainWindow *ui;
+    Settings *settingsWindow = nullptr;
 };
 #endif // MAINWINDOW_H

@@ -27,6 +27,28 @@ MainWindow::MainWindow(QWidget *parent)
     connect(newTabShortcut, &QShortcut::activated, this, [this]() {
         on_tabWidget_tabBarDoubleClicked(0);
     });
+    auto *closeTabShortcut = new QShortcut(QKeySequence(Qt::CTRL | Qt::Key_W), this);
+    connect(closeTabShortcut, &QShortcut::activated, this, [this]() {
+        int currentIndex = ui->tabWidget->currentIndex();
+        if (currentIndex != -1) {
+            QWidget *currentWidget = ui->tabWidget->widget(currentIndex);
+            ui->tabWidget->removeTab(currentIndex);
+            delete currentWidget;
+        }
+    });
+    auto *renameTabShortcut = new QShortcut(QKeySequence(Qt::CTRL | Qt::Key_R), this);
+    connect(renameTabShortcut, &QShortcut::activated, this, [this]() {
+        int currentIndex = ui->tabWidget->currentIndex();
+        if (currentIndex != -1) {
+            bool ok;
+            QString newName = QInputDialog::getText(this, tr("Rename Tab"),
+                                                    tr("New tab name:"), QLineEdit::Normal,
+                                                    ui->tabWidget->tabText(currentIndex), &ok);
+            if (ok && !newName.isEmpty()) {
+                renameTab(currentIndex, newName);
+            }
+        }
+    });
 }
 
 MainWindow::~MainWindow()
@@ -449,8 +471,17 @@ void MainWindow::on_actionCreate_Issue_triggered()
 
 void MainWindow::on_actionTheme_triggered()
 {
-    Settings *gameWindow = new Settings();
-    gameWindow->show();
+    if (!settingsWindow) {
+        settingsWindow = new Settings(this);
+        settingsWindow->setAttribute(Qt::WA_DeleteOnClose);
+        connect(settingsWindow, &QObject::destroyed, this, [this]() {
+            settingsWindow = nullptr;
+        });
+    }
+
+    settingsWindow->show();
+    settingsWindow->raise();
+    settingsWindow->activateWindow();
 }
 
 
@@ -464,5 +495,23 @@ void MainWindow::on_tabWidget_tabBarDoubleClicked(int index)
     layout->addWidget(textEdit);
     ui->tabWidget->addTab(newTabPage, tr("Untitled"));
     ui->tabWidget->setCurrentWidget(newTabPage);
+}
+
+void MainWindow::deleteTab(int index)
+{
+    if (index >= 0 && index < ui->tabWidget->count())
+    {
+        QWidget *tabPage = ui->tabWidget->widget(index);
+        ui->tabWidget->removeTab(index);
+        delete tabPage;
+    }
+}
+
+void MainWindow::renameTab(int index, const QString &newName)
+{
+    if (index >= 0 && index < ui->tabWidget->count())
+    {
+        ui->tabWidget->setTabText(index, newName);
+    }
 }
 
