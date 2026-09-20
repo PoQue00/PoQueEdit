@@ -98,6 +98,8 @@ private slots:
 
     void on_actionReset_To_Default_triggered();
 
+    void load_theme_from_config();
+
 private:
     void deleteTab(int index);
     void renameTab(int index, const QString &newName);

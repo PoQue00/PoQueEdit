@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "settings.h"
+#include "global_vars.h"
 #include <QInputDialog>
 #include <QFile>
 #include <QDir>
@@ -21,6 +22,7 @@
 #include <QJsonObject>
 #include <QJsonDocument>
 #include <QFile>
+#include <QApplication>
 
 
 MainWindow::MainWindow(QWidget *parent)
@@ -557,3 +559,35 @@ void MainWindow::on_actionReset_To_Default_triggered()
     applyTheme("#f0f9ff", "#ffffff", "#0d2d45", "#a5cde8", "#378bc2", "#d4ecfa");
 }
 
+void MainWindow::load_theme_from_config()
+{
+    QFile file(QDir::homePath() + "/Documents/PoQueEdit/config.json");
+    if (file.open(QIODevice::ReadOnly | QIODevice::Text))
+    {
+        QByteArray data = file.readAll();
+        QJsonDocument doc = QJsonDocument::fromJson(data);
+        if (!doc.isNull() && doc.isObject())
+        {
+            QJsonObject json = doc.object();
+            if (json.contains("theme") && json["theme"].isString())
+            {
+                currentTheme = json["theme"].toString();
+                // Apply the theme based on the loaded value
+                if (currentTheme == "Default") {
+                    applyTheme("#f0f9ff", "#ffffff", "#0d2d45", "#a5cde8", "#378bc2", "#d4ecfa");
+                } else if (currentTheme == "Dark") {
+                    applyTheme("#160d21", "#241236", "#f0e1ff", "#63378c", "#b979ed", "#45236a");
+                } else if (currentTheme == "Light Pink") {
+                    applyTheme("#fff4f8", "#ffffff", "#451329", "#e4a8c0", "#c45a88", "#f8d7e5");
+                } else if (currentTheme == "Dark Pink") {
+                    applyTheme("#210d18", "#351326", "#ffe4ef", "#8c3e62", "#ed78a9", "#612343");
+                } else if (currentTheme == "Light Cyan") {
+                    applyTheme("#efffff", "#ffffff", "#0c3638", "#9ad9da", "#38a9ad", "#d0f1f1");
+                } else if (currentTheme == "Dark Cyan") {
+                    applyTheme("#071b1d", "#0b2b2e", "#d8ffff", "#23767a", "#61d9dc", "#15565a");
+                }
+            }
+        }
+        file.close();
+    }
+}
