@@ -1,7 +1,9 @@
 #include "settings.h"
 #include "ui_settings.h"
+#include "mainwindow.h"
 #include <QApplication>
 #include <QDebug>
+
 
 Settings::Settings(QWidget *parent)
     : QMainWindow(parent)
@@ -44,6 +46,8 @@ void Settings::on_comboBox_currentTextChanged(const QString &arg1)
     if (arg1 == "Default") {
 
         qDebug() << "Default";
+
+        currentTheme = "Default";
 
         qApp->setStyleSheet(
 
@@ -127,6 +131,7 @@ void Settings::on_comboBox_currentTextChanged(const QString &arg1)
 
         qDebug() << "Light";
 
+        currentTheme = "Light";
         qApp->setStyleSheet(
 
                     "QMainWindow, QWidget {"
@@ -209,6 +214,7 @@ void Settings::on_comboBox_currentTextChanged(const QString &arg1)
 
         qDebug() << "Dark";
 
+        currentTheme = "Dark";
         qApp->setStyleSheet(
 
                     "QMainWindow, QWidget {"
@@ -289,6 +295,7 @@ void Settings::on_comboBox_currentTextChanged(const QString &arg1)
 
     else if (arg1 == "Red") {
 
+        currentTheme = "Red";
         qDebug() << "Red";
 
         qApp->setStyleSheet(
@@ -371,6 +378,7 @@ void Settings::on_comboBox_currentTextChanged(const QString &arg1)
 
     else if (arg1 == "Orange") {
         qDebug() << "Orange";
+        currentTheme = "Orange";
         qApp->setStyleSheet(
             "QMainWindow, QWidget { background-color: #1f1208; color: #ffe0c2; }"
             "QComboBox, QTextEdit { background-color: #321d0d; color: #ffe8d1; border: 1px solid #8a4b19; border-radius: 5px; padding: 4px; }"
@@ -388,6 +396,7 @@ void Settings::on_comboBox_currentTextChanged(const QString &arg1)
     }
 
     else if (arg1 == "Yellow") {
+        currentTheme = "Yellow";
         qDebug() << "Yellow";
         qApp->setStyleSheet(
             "QMainWindow, QWidget { background-color: #1d1a08; color: #fff5bd; }"
@@ -406,6 +415,7 @@ void Settings::on_comboBox_currentTextChanged(const QString &arg1)
     }
 
     else if (arg1 == "Green") {
+        currentTheme = "Green";
         qDebug() << "Green";
         qApp->setStyleSheet(
             "QMainWindow, QWidget { background-color: #081c10; color: #c9f3d5; }"
@@ -424,6 +434,7 @@ void Settings::on_comboBox_currentTextChanged(const QString &arg1)
     }
 
     else if (arg1 == "Blue") {
+        currentTheme = "Blue";
         qDebug() << "Blue";
         qApp->setStyleSheet(
             "QMainWindow, QWidget { background-color: #081522; color: #c9e8ff; }"
@@ -442,6 +453,7 @@ void Settings::on_comboBox_currentTextChanged(const QString &arg1)
     }
 
     else if (arg1 == "Purple") {
+        currentTheme = "Purple";
         qDebug() << "Purple";
         qApp->setStyleSheet(
             "QMainWindow, QWidget { background-color: #160d21; color: #ead7ff; }"
@@ -460,6 +472,7 @@ void Settings::on_comboBox_currentTextChanged(const QString &arg1)
     }
 
     else if (arg1 == "Pink") {
+        currentTheme = "Pink";
         qDebug() << "Pink";
         qApp->setStyleSheet(
             "QMainWindow, QWidget { background-color: #210d18; color: #ffd9e8; }"
@@ -478,6 +491,7 @@ void Settings::on_comboBox_currentTextChanged(const QString &arg1)
     }
 
     else if (arg1 == "Cyan") {
+        currentTheme = "Cyan";
         qDebug() << "Cyan";
         qApp->setStyleSheet(
             "QMainWindow, QWidget { background-color: #071b1d; color: #c7f5f5; }"
@@ -496,66 +510,82 @@ void Settings::on_comboBox_currentTextChanged(const QString &arg1)
     }
 
     else if (arg1 == "Light Red") {
+        currentTheme = "Light Red";
         qDebug() << "Light Red";
         applyTheme("#fff5f5", "#ffffff", "#3b1111", "#e0aaaa", "#c94a4a", "#f8dada");
     }
     else if (arg1 == "Dark Red") {
+        currentTheme = "Dark Red";
         qDebug() << "Dark Red";
         applyTheme("#180909", "#260f0f", "#f5dddd", "#632222", "#c94a4a", "#5c1c1c");
     }
     else if (arg1 == "Light Orange") {
+        currentTheme = "Light Orange";
         qDebug() << "Light Orange";
         applyTheme("#fff7ef", "#ffffff", "#3d210c", "#e5b98c", "#d87824", "#fce2c4");
     }
     else if (arg1 == "Dark Orange") {
+        currentTheme = "Dark Orange";
         qDebug() << "Dark Orange";
         applyTheme("#1f1208", "#321d0d", "#ffe8d1", "#8a4b19", "#f08a24", "#5c3214");
     }
     else if (arg1 == "Light Yellow") {
+        currentTheme = "Light Yellow";
         qDebug() << "Light Yellow";
         applyTheme("#fffef0", "#ffffff", "#3b3508", "#d9cd72", "#aa9a20", "#f5efb8");
     }
     else if (arg1 == "Dark Yellow") {
+        currentTheme = "Dark Yellow";
         qDebug() << "Dark Yellow";
         applyTheme("#1d1a08", "#302b0b", "#fff8d6", "#81721b", "#e0ca35", "#554d12");
     }
     else if (arg1 == "Light Green") {
+        currentTheme = "Light Green";
         qDebug() << "Light Green";
         applyTheme("#f2fff5", "#ffffff", "#10351b", "#a4d4b1", "#369957", "#d2f0d9");
     }
     else if (arg1 == "Dark Green") {
+        currentTheme = "Dark Green";
         qDebug() << "Dark Green";
         applyTheme("#081c10", "#0d2b19", "#d9f8e2", "#236c3d", "#55c878", "#18512e");
     }
     else if (arg1 == "Light Blue") {
+        currentTheme = "Light Blue";
         qDebug() << "Light Blue";
         applyTheme("#f0f9ff", "#ffffff", "#0d2d45", "#a5cde8", "#378bc2", "#d4ecfa");
     }
     else if (arg1 == "Dark Blue") {
+        currentTheme = "Dark Blue";
         qDebug() << "Dark Blue";
         applyTheme("#081522", "#0d2438", "#d9efff", "#245c86", "#55b7ed", "#16466b");
     }
     else if (arg1 == "Light Purple") {
+        currentTheme = "Light Purple";
         qDebug() << "Light Purple";
         applyTheme("#faf5ff", "#ffffff", "#2d1645", "#c9a9e2", "#8c52c4", "#eadcf7");
     }
     else if (arg1 == "Dark Purple") {
+        currentTheme = "Dark Purple";
         qDebug() << "Dark Purple";
         applyTheme("#160d21", "#241236", "#f0e1ff", "#63378c", "#b979ed", "#45236a");
     }
     else if (arg1 == "Light Pink") {
+        currentTheme = "Light Pink";
         qDebug() << "Light Pink";
         applyTheme("#fff4f8", "#ffffff", "#451329", "#e4a8c0", "#c45a88", "#f8d7e5");
     }
     else if (arg1 == "Dark Pink") {
+        currentTheme = "Dark Pink";
         qDebug() << "Dark Pink";
         applyTheme("#210d18", "#351326", "#ffe4ef", "#8c3e62", "#ed78a9", "#612343");
     }
     else if (arg1 == "Light Cyan") {
+        currentTheme = "Light Cyan";
         qDebug() << "Light Cyan";
         applyTheme("#efffff", "#ffffff", "#0c3638", "#9ad9da", "#38a9ad", "#d0f1f1");
     }
     else if (arg1 == "Dark Cyan") {
+        currentTheme = "Dark Cyan";
         qDebug() << "Dark Cyan";
         applyTheme("#071b1d", "#0b2b2e", "#d8ffff", "#23767a", "#61d9dc", "#15565a");
     }

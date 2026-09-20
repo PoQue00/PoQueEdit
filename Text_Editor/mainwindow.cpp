@@ -1,5 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include "settings.h"
 #include <QInputDialog>
 #include <QFile>
 #include <QDir>
@@ -17,6 +18,10 @@
 #include <QKeyEvent>
 #include <QDebug>
 #include <QShortcut>
+#include <QJsonObject>
+#include <QJsonDocument>
+#include <QFile>
+
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -513,5 +518,42 @@ void MainWindow::renameTab(int index, const QString &newName)
     {
         ui->tabWidget->setTabText(index, newName);
     }
+}
+
+
+void MainWindow::on_actionSave_Config_As_triggered()
+{
+    QFile file(QDir::homePath() + "/Documents/PoQueEdit/config.json");
+    if (file.open(QIODevice::WriteOnly | QIODevice::Text))
+    {
+        QJsonObject json;
+        json["theme"] = currentTheme;
+
+        QJsonDocument doc(json);
+        file.write(doc.toJson());
+        file.close();
+    }
+}
+
+
+void MainWindow::on_actionDelete_Config_triggered()
+{
+    QFile file(QDir::homePath() + "/Documents/PoQueEdit/config.json");
+    if (file.exists())
+    {
+        file.remove();
+    }
+}
+
+
+void MainWindow::on_actionReset_To_Default_triggered()
+{
+    QFile file(QDir::homePath() + "/Documents/PoQueEdit/config.json");
+    if (file.exists())
+    {
+        file.remove();
+    }
+    currentTheme = "Default";
+    applyTheme("#f0f9ff", "#ffffff", "#0d2d45", "#a5cde8", "#378bc2", "#d4ecfa");
 }
 

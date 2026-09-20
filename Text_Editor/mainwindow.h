@@ -92,6 +92,12 @@ private slots:
 
     void on_tabWidget_tabBarDoubleClicked(int index);
 
+    void on_actionSave_Config_As_triggered();
+
+    void on_actionDelete_Config_triggered();
+
+    void on_actionReset_To_Default_triggered();
+
 private:
     void deleteTab(int index);
     void renameTab(int index, const QString &newName);

@@ -76,7 +76,10 @@ template <> constexpr inline auto MainWindow::qt_create_metaobjectdata<qt_meta_t
         "on_actionCreate_Issue_triggered",
         "on_actionTheme_triggered",
         "on_tabWidget_tabBarDoubleClicked",
-        "index"
+        "index",
+        "on_actionSave_Config_As_triggered",
+        "on_actionDelete_Config_triggered",
+        "on_actionReset_To_Default_triggered"
     };
 
     QtMocHelpers::UintData qt_methods {
@@ -154,6 +157,12 @@ template <> constexpr inline auto MainWindow::qt_create_metaobjectdata<qt_meta_t
         QtMocHelpers::SlotData<void(int)>(37, 2, QMC::AccessPrivate, QMetaType::Void, {{
             { QMetaType::Int, 38 },
         }}),
+        // Slot 'on_actionSave_Config_As_triggered'
+        QtMocHelpers::SlotData<void()>(39, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_actionDelete_Config_triggered'
+        QtMocHelpers::SlotData<void()>(40, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_actionReset_To_Default_triggered'
+        QtMocHelpers::SlotData<void()>(41, 2, QMC::AccessPrivate, QMetaType::Void),
     };
     QtMocHelpers::UintData qt_properties {
     };
@@ -190,6 +199,7 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 10: _t->on_actionNew_File_triggered(); break;
         case 11: _t->on_actionDuplicate_triggered(); break;
         case 12: _t->on_actionRepository_triggered(); break;
+        case 13: _t->on_actionIssues_triggered(); break;
         case 14: _t->on_actionProfile_triggered(); break;
         case 15: _t->on_actionRestart_triggered(); break;
         case 16: _t->on_actionCustom_triggered(); break;
@@ -212,6 +222,9 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 33: _t->on_actionCreate_Issue_triggered(); break;
         case 34: _t->on_actionTheme_triggered(); break;
         case 35: _t->on_tabWidget_tabBarDoubleClicked((*reinterpret_cast<std::add_pointer_t<int>>(_a[1]))); break;
+        case 36: _t->on_actionSave_Config_As_triggered(); break;
+        case 37: _t->on_actionDelete_Config_triggered(); break;
+        case 38: _t->on_actionReset_To_Default_triggered(); break;
         default: ;
         }
     }
@@ -236,14 +249,14 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 36)
+        if (_id < 39)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 36;
+        _id -= 39;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 36)
+        if (_id < 39)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 36;
+        _id -= 39;
     }
     return _id;
 }
